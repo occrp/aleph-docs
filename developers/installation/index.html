@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Installing Aleph – Aleph</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/_astro/hoisted.2dfbd17d.css" />
+<link rel="stylesheet" href="/_astro/index.f70b7d34.css" />
+<link rel="stylesheet" href="/_astro/index.8ee8c38b.css" />
+<link rel="stylesheet" href="/_astro/index.a2ee5a0d.css" /><script type="module" src="/_astro/hoisted.bc71e440.js"></script></head>
+  <body>
+    
+
+<a class="SkipLink astro-DF2DBLBO" href="#content">
+  Skip to content
+</a>
+
+    
+
+<header class="Header astro-PTS2MPZI">
+  
+
+<div class="Wrapper Wrapper--padded Header__wrapper astro-PTS2MPZI astro-5QJF6FES">
+  
+    <a href="/" class="Header__title astro-PTS2MPZI" translate="no">
+      Aleph
+    </a>
+
+    <div class="Header__nav astro-PTS2MPZI">
+          
+
+<nav class="HeaderNav astro-BIH2FJRL">
+  <ul class="astro-BIH2FJRL">
+    <li class="HeaderNav__item astro-BIH2FJRL">
+          <a href="/users" class="astro-BIH2FJRL">Users</a>
+        </li><li class="HeaderNav__item HeaderNav__item--active astro-BIH2FJRL">
+          <a href="/developers" class="astro-BIH2FJRL">Developers</a>
+        </li>
+  </ul>
+</nav>
+        </div><div class="Header__translations astro-PTS2MPZI">
+          
+
+
+
+<div class="LanguageSelector astro-63743BKI" hidden>
+  
+
+<div class="Icon LanguageSelector__icon astro-63743BKI astro-4FCJ53EQ" aria-hidden="true">
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="astro-4FCJ53EQ">
+        <path d="M7.75 2.75a.75.75 0 00-1.5 0v1.258a32.987 32.987 0 00-3.599.278.75.75 0 10.198 1.487A31.545 31.545 0 018.7 5.545 19.381 19.381 0 017 9.56a19.418 19.418 0 01-1.002-2.05.75.75 0 00-1.384.577 20.935 20.935 0 001.492 2.91 19.613 19.613 0 01-3.828 4.154.75.75 0 10.945 1.164A21.116 21.116 0 007 12.331c.095.132.192.262.29.391a.75.75 0 001.194-.91c-.204-.266-.4-.538-.59-.815a20.888 20.888 0 002.333-5.332c.31.031.618.068.924.108a.75.75 0 00.198-1.487 32.832 32.832 0 00-3.599-.278V2.75z" class="astro-4FCJ53EQ"></path>
+        <path fill-rule="evenodd" d="M13 8a.75.75 0 01.671.415l4.25 8.5a.75.75 0 11-1.342.67L15.787 16h-5.573l-.793 1.585a.75.75 0 11-1.342-.67l4.25-8.5A.75.75 0 0113 8zm2.037 6.5L13 10.427 10.964 14.5h4.073z" clip-rule="evenodd" class="astro-4FCJ53EQ"></path>
+      </svg>
+</div>
+  <span class="LanguageSelector__label astro-63743BKI" aria-hidden="true">
+    English
+  </span>
+  
+
+<div class="Icon LanguageSelector__chevron astro-63743BKI astro-4FCJ53EQ" aria-hidden="true">
+  
+
+  
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="astro-4FCJ53EQ">
+        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" class="astro-4FCJ53EQ"></path>
+      </svg>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  <label for="language-selector" class="visually-hidden astro-63743BKI">
+    Select language:
+  </label>
+
+  <select id="language-selector" class="LanguageSelector__select astro-63743BKI">
+    <option selected value="" translate="no" class="astro-63743BKI">
+      English
+    </option>
+    <option value="es" lang="es" translate="no" class="astro-63743BKI">
+          Español
+        </option><option value="pt" lang="pt" translate="no" class="astro-63743BKI">
+          Português
+        </option><option value="fr" lang="fr" translate="no" class="astro-63743BKI">
+          Français
+        </option>
+  </select>
+</div>
+        </div><div class="Header__search astro-PTS2MPZI">
+          
+
+
+
+<div id="algolia-docsearch" data-algolia-app-id="T36QKHHSVS" data-algolia-api-key="b462393bca678070ceb9abf533aeeb0b" data-algolia-index-name="aleph-occrp">
+</div>
+        </div>
+</div>
+</header>
+
+    
+  <div class="DefaultLayout astro-63CSQH4F">
+    
+
+<div class="Wrapper Wrapper--padded DefaultLayout__wrapper astro-63CSQH4F astro-5QJF6FES">
+  <div class="DefaultLayout__sidebar DefaultLayout__left astro-63CSQH4F" id="main-sidebar">
+            
+
+
+
+<div class="ExpandableSidebar astro-AR35RRUP" id="expandable-sidebar">
+  <button class="ExpandableSidebar__toggle astro-AR35RRUP" id="expandable-sidebar-toggle" aria-expanded="false" aria-controls="expandable-sidebar-content">
+    
+
+<div class="Icon astro-4FCJ53EQ" aria-hidden="true">
+  
+
+  
+
+  
+
+  
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="astro-4FCJ53EQ">
+        <path fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10zm0 5.25a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" class="astro-4FCJ53EQ"></path>
+      </svg>
+
+  
+
+  
+
+  
+
+  
+</div>
+    <span class="ExpandableSidebar__show astro-AR35RRUP">Show navigation</span>
+    <span class="ExpandableSidebar__hide astro-AR35RRUP">Hide navigation</span>
+  </button>
+
+  <div class="ExpandableSidebar__content astro-AR35RRUP" id="expandable-sidebar-content">
+    
+    
+
+<nav class="astro-UAI3XTHD">
+  <ul class="astro-UAI3XTHD">
+    
+
+<li class="NavSection astro-EJN57FPH">
+  <span class="section-heading astro-EJN57FPH">Tech Docs</span>
+  <ul class="astro-EJN57FPH">
+    
+
+<li class="NavItem NavItem--active astro-7VDFTENJ">
+  <a href="/developers/installation" class="astro-7VDFTENJ">
+    Installing Aleph
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/developers/followthemoney" class="astro-7VDFTENJ">
+    FollowTheMoney
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/developers/memorious" class="astro-7VDFTENJ">
+    Crawling data with Memorious
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/developers/alephclient" class="astro-7VDFTENJ">
+    alephclient CLI
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/developers/mappings" class="astro-7VDFTENJ">
+    Importing structured data
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/developers/mixed-graphs" class="astro-7VDFTENJ">
+    Mixed document/entity graphs
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/developers/adding-text-processors" class="astro-7VDFTENJ">
+    Adding text processors
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/developers/technical-faq" class="astro-7VDFTENJ">
+    Technical FAQ
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/developers/developer-tools" class="astro-7VDFTENJ">
+    Developer tools
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/developers/datacommons" class="astro-7VDFTENJ">
+    Data commons
+    
+  </a>
+
+  
+</li>
+  </ul>
+</li>
+
+<li class="NavSection astro-EJN57FPH">
+  <span class="section-heading astro-EJN57FPH">Reference</span>
+  <ul class="astro-EJN57FPH">
+    
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="https://redocly.github.io/redoc/?url=https://aleph.occrp.org/api/openapi.json" class="astro-7VDFTENJ">
+    Aleph API
+    
+
+<div class="Icon NavItem__icon astro-7VDFTENJ astro-4FCJ53EQ" aria-hidden="true">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="astro-4FCJ53EQ">
+        <path fill-rule="evenodd" d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5z" clip-rule="evenodd" class="astro-4FCJ53EQ"></path>
+        <path fill-rule="evenodd" d="M6.194 12.753a.75.75 0 001.06.053L16.5 4.44v2.81a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.553l-9.056 8.194a.75.75 0 00-.053 1.06z" clip-rule="evenodd" class="astro-4FCJ53EQ"></path>
+      </svg>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</div>
+  </a>
+
+  
+</li>
+  </ul>
+</li>
+  </ul>
+</nav>
+  
+  </div>
+</div>
+          </div><div class="DefaultLayout__sidebar DefaultLayout__right astro-63CSQH4F">
+            
+
+<div class="Stack astro-4ZDCY3LK">
+  
+              
+
+<div class="TocNav">
+      
+        <h2 id="toc-nav-heading" class="section-heading">
+          On this page
+        </h2>
+
+        
+
+<nav aria-labelledby="toc-nav-heading" class="astro-UAI3XTHD">
+  <ul class="astro-UAI3XTHD">
+    
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#prerequisites" class="astro-7VDFTENJ">
+    Prerequisites
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#developer-setup" class="astro-7VDFTENJ">
+    Developer setup
+    
+  </a>
+
+  <ul class="NavItem__children astro-7VDFTENJ">
+        
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#what-is-developer-mode" class="astro-7VDFTENJ">
+    What is developer mode?
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#getting-started" class="astro-7VDFTENJ">
+    Getting started
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#working-in-a-shell" class="astro-7VDFTENJ">
+    Working in a shell
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#users" class="astro-7VDFTENJ">
+    Users
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#loading-sample-data" class="astro-7VDFTENJ">
+    Loading Sample Data
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#running-tests" class="astro-7VDFTENJ">
+    Running Tests
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#debugging" class="astro-7VDFTENJ">
+    Debugging
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#building-from-a-clean-state" class="astro-7VDFTENJ">
+    Building from a clean state
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#inspecting-elasticsearch" class="astro-7VDFTENJ">
+    Inspecting ElasticSearch
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#inspecting-the-postgresql-database" class="astro-7VDFTENJ">
+    Inspecting the PostgreSQL database
+    
+  </a>
+
+  
+</li>
+      </ul>
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#production-deployment" class="astro-7VDFTENJ">
+    Production deployment
+    
+  </a>
+
+  <ul class="NavItem__children astro-7VDFTENJ">
+        
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#upgrading" class="astro-7VDFTENJ">
+    Upgrading
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#backing-up-and-restoring-data" class="astro-7VDFTENJ">
+    Backing up and restoring data
+    
+  </a>
+
+  
+</li>
+      </ul>
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#configuration" class="astro-7VDFTENJ">
+    Configuration
+    
+  </a>
+
+  <ul class="NavItem__children astro-7VDFTENJ">
+        
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#configuration-options" class="astro-7VDFTENJ">
+    Configuration options
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#pages-configuration" class="astro-7VDFTENJ">
+    Pages configuration
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#app-wide-message-banner" class="astro-7VDFTENJ">
+    App-wide message banner
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#oauth-credentials" class="astro-7VDFTENJ">
+    OAuth Credentials
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#sentry" class="astro-7VDFTENJ">
+    Sentry
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#mutual-tls" class="astro-7VDFTENJ">
+    Mutual TLS
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#scaling-workers" class="astro-7VDFTENJ">
+    Scaling workers
+    
+  </a>
+
+  
+</li>
+      </ul>
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#troubleshooting" class="astro-7VDFTENJ">
+    Troubleshooting
+    
+  </a>
+
+  
+</li>
+  </ul>
+</nav>
+      
+    </div>
+              
+
+<div class="Meta astro-EVT4MHHE">
+  <a href="https://github.com/alephdata/aleph/commits/main/docs/src/pages/developers/installation.mdx" noreferrer noopener class="astro-EVT4MHHE">Last updated on 2023-11-09.</a>
+  <br class="astro-EVT4MHHE">
+  <a href="https://github.com/alephdata/aleph/edit/main/docs/src/pages/developers/installation.mdx" noreferrer noopener class="astro-EVT4MHHE">Edit this page on GitHub.</a>
+</div>
+            
+</div>
+          </div><main class="DefaultLayout__content astro-63CSQH4F" id="content">
+        
+
+<div class="Wrapper Wrapper--prose astro-5QJF6FES">
+  
+          
+  
+  
+  
+
+<div class="RichContent astro-B2ZQFBP5">
+  <h1 class="alpha" id="installing-aleph">Installing Aleph</h1><p class="lead"><p>Below you will find the installation steps on how to install Aleph.</p></p><h2 class="beta" id="prerequisites">Prerequisites</h2><p>Aleph requires multiple services to operate. It uses Docker containers to make it easier for development and deployments. Before we continue, you will need to have Docker and <code>docker-compose</code> installed. Please refer to their manual to learn how to set up <a href="https://docs.docker.com/engine/installation/">Docker</a> and <a href="https://docs.docker.com/compose/install/">docker-compose</a>.</p><h2 class="beta" id="developer-setup">Developer setup</h2>
+
+<div class="Callout Callout--danger astro-HEOOEAXT">
+  <p>This section describes how to set up Aleph for software development. Developer mode disables many security measures and it not meant to be used for internet-facing uses, <a href="#production-deployment">Production deployment</a> is needed instead.</p>
+</div><h3 class="gamma" id="what-is-developer-mode">What is developer mode?</h3><p>Developer mode is a docker configuration for Aleph which makes it easy to do software development and debug the tool without having to install its dependencies on your host machine. These are the features of developer mode:</p><ul class="unordered-list">
+<li>The code for the backend (api) server and the React frontend will automatically reload to reflect any changes you make in your working copy while the application is running.</li>
+<li>Both backend and frontend will operate in debug mode and give more verbose error messages when a problem occurs.</li>
+<li>The host machine’s file system will be accessible from within Aleph’s docker container at <code>/host</code>.</li>
+</ul><p>Developer mode overrides the configuration file for <code>docker-compose</code>, using <code>docker-compose.dev.yml</code> instead of <code>docker-compose.yml</code>. This is done by wrapping most developer mode commands using <code>make</code>.</p><h3 class="gamma" id="getting-started">Getting started</h3><p>As a first step, check out the source code of Aleph from GitHub:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #6A737D"># Use the SSH URL if you have commit access:</span></span>
+<span class="line"><span style="color: #B392F0">git</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">clone</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">https://github.com/alephdata/aleph.git</span></span>
+<span class="line"><span style="color: #79B8FF">cd</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">aleph/</span></span></code></pre>
+</div><p>Once the code is downloaded, find the file called <code>aleph.env.tmpl</code> in the base directory. This is a template of the configuration file. Make a copy of this file named <code>aleph.env</code> and define settings for your local instance. Check <a href="#configuration">the configuration section</a> for more information regarding the available options.</p><p>Also, please execute the following command to allow ElasticSearch to map its memory:</p>
+
+<div class="Callout astro-HEOOEAXT">
+  <p>When running Docker on macOS, Docker uses a virtual machine as the container host. Therefore, you need to run the command inside of the Docker virtual machine. In order to log in to the virtual machine, execute <code>docker run -it --rm --privileged --pid=host justincormack/nsenter1</code>.</p>
+</div>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #B392F0">sysctl</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">-w</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">vm.max_map_count=</span><span style="color: #79B8FF">262144</span></span></code></pre>
+</div><p>With the settings in place, you can use <code>make all</code> to set everything up and launch the web service. This is equivalent to the following steps:</p><ol class="ordered-list">
+<li><code>make build</code> to build the docker images for the application and relevant services. You can run <code>make docker-pull</code> before to pull pre-build release images.</li>
+<li><code>make upgrade</code> to run the latest database migrations and create/update the search index.</li>
+<li><code>make web</code> to run the web-based API server and the user interface.</li>
+<li>In a separate shell, run <code>make worker</code> to start a worker. If you do not start a worker, background jobs (for example ingesting new documents) won’t be processed.</li>
+</ol><p>Open <code>http://localhost:8080/</code> in your browser to visit the web frontend.</p><p>If any of the above steps fail, refer to <a href="#troubleshooting">the troubleshooting section</a> for some common stumbling blocks and their fixes.</p><h3 class="gamma" id="working-in-a-shell">Working in a shell</h3><p>During development, you will need to run command-line operations for certain tasks. In order to do so, you will first need to enter the docker container of Aleph. To do so, run:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #B392F0">make</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">shell</span></span>
+<span class="line"><span style="color: #6A737D"># This will result in a root shell inside the container:</span></span>
+<span class="line"><span style="color: #B392F0">aleph</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">--help</span></span></code></pre>
+</div><p>This will enter a docker container where the <code>aleph</code> shell command is available (see <a href="https://github.com/alephdata/aleph/wiki/Usage">Usage</a> for details). You can also access the host computers file system at <code>/host</code>. This means a file stored at <code>/tmp/bla.txt</code> on your computer can be found at <code>/host/tmp/bla.txt</code> inside the container.</p>
+
+<div class="Callout astro-HEOOEAXT">
+  <p>When you run Aleph in development mode, the default configuration will not run the worker component used to index documents and do other background work. You can start it either via <code>make worker</code> or inside an Aleph shell using <code>aleph worker</code>.</p>
+</div><h3 class="gamma" id="users">Users</h3><p>For development purposes, you can quickly create a new user with the <code>aleph createuser</code> command, inside a shell:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #B392F0">aleph</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">createuser</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">--name=</span><span style="color: #9ECBFF">&quot;Alice&quot;</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">\</span></span>
+<span class="line"><span style="color: #E1E4E8">                 </span><span style="color: #79B8FF">--admin</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">\</span></span>
+<span class="line"><span style="color: #E1E4E8">                 </span><span style="color: #79B8FF">--password=123abc</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">\</span></span>
+<span class="line"><span style="color: #E1E4E8">                 </span><span style="color: #9ECBFF">user@example.com</span></span></code></pre>
+</div><p>If you pass an email address in the <code>ALEPH_ADMINS</code> environment variable (in your <a href="#configuration">configuration</a>) it will automatically be made into an admin.</p><p>After running <code>createuser</code>, the newly created user’s API key is printed, which you can use in the <code>Authorization</code> HTTP header of requests to the API. If you pass a password, you can use this email address and password to log into the web interface.</p><p>You can also run Aleph in single-user mode by setting <code>ALEPH_SINGLE_USER</code> to <code>true</code>. When you run Aleph in single-user mode, authentication is disabled and every user is automatically logged in as an admin user.</p><h3 class="gamma" id="loading-sample-data">Loading Sample Data</h3><p>If you want to quickly get some sample data in your Aleph instance you can use <code>crawldir</code> to index a small test data folder.</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #B392F0">aleph</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">crawldir</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">/aleph/contrib/testdata</span></span></code></pre>
+</div><p>Make sure that a worker is running, otherwise your data won’t be processed. Run <code>make worker</code> to start a worker in your development environment. If you can’t see your sample data, make sure that you’re signed in, as your data won’t be public by default. See <a href="/developers/installation#users">Users</a> for instructions on how to create new user accounts.</p><p>To also get a sample of (non-document) entity data, consider loading <a href="/developers/datacommons#opensanctions">sanctions lists</a>.</p><h3 class="gamma" id="running-tests">Running Tests</h3><p>To run the tests, assuming you already have the <code>docker-compose</code> up and ready, run:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #B392F0">make</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">test</span></span>
+<span class="line"><span style="color: #B392F0">make</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">ingest-test</span></span></code></pre>
+</div><p>This will create a new database and run all the tests.</p><h3 class="gamma" id="debugging">Debugging</h3><p>If you’re looking to debug changes that you’ve made to Alephs python then there are a couple of options. By default, Aleph ships with the vscode python debugger (debugpy) enabled for the API and worker services when in dev mode. This makes it easy to create a launch.json file and attach a debugger to a running instance of the software.</p><p>The API is exposed via the standard 5678 port whereas the worker service is exposed via 5679.</p><p>Additionally you may wish to configure the debugger to wait for a client to attach. If this is the case you’ll need to edit the docker-compose.dev.yml file adding the following as the command for the API:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #85E89D">command</span><span style="color: #E1E4E8">: </span><span style="color: #9ECBFF">python3 -m debugpy --listen 0.0.0.0:5678 --wait-for-client -m flask run -h 0.0.0.0 -p 5000 --with-threads --reload --debugger</span></span></code></pre>
+</div><p>Or in the case of the worker, from the Makefile:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #B392F0">worker:</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">services</span></span>
+<span class="line"><span style="color: #E1E4E8">    </span><span style="color: #B392F0">$(COMPOSE</span><span style="color: #E1E4E8">) run -p 127.0.0.1:5679:5679 --rm app python3 -m debugpy --listen 0.0.0.0:5679 --wait-for-client /usr/local/bin/aleph worker</span></span></code></pre>
+</div><p>If you’d prefer to use the pdb debugger then the first step is to add the following to the api section of the docker-compose.dev.yml:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #85E89D">stdin_open</span><span style="color: #E1E4E8">: </span><span style="color: #79B8FF">true</span></span>
+<span class="line"><span style="color: #85E89D">tty</span><span style="color: #E1E4E8">: </span><span style="color: #79B8FF">true</span></span></code></pre>
+</div><p>Once this is done, restart your docker containers and set a breakpoint() in your code. Now, running docker attach aleph_api_1 should provide you the ability to view that breakpoint and make use of pdb’s other features.</p><h3 class="gamma" id="building-from-a-clean-state">Building from a clean state</h3><p>You can also build the Aleph images locally. This could be useful while working on the Dockerfile changes and new dependency upgrades.</p><p>To build the image you can run <code>make build</code>, which will build the <code>alephdata/aleph</code> image (this will generate a production ready image).</p><h3 class="gamma" id="inspecting-elasticsearch">Inspecting ElasticSearch</h3><p>At times it can be useful to inspect the contents of the ElasticSearch indices. There are several ElasticSearch GUIs out there that you can use to query ElasticSearch. You could for example use <a href="https://github.com/appbaseio/dejavu">Dejavu</a>:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #B392F0">docker</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">run</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">-p</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">1358</span><span style="color: #9ECBFF">:1358</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">-d</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">appbaseio/dejavu</span></span>
+<span class="line"><span style="color: #B392F0">open</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">http://localhost:1358/</span></span></code></pre>
+</div><p>Then you can connect Dejavu to the ElasticSearch container that has been exposed on <code>http://localhost:9200</code>.</p><p>You can also <a href="https://www.elastic.co/guide/en/cloud/current/ec-working-with-elasticsearch.html">approach ElasticSearch from the command line</a>.</p><h3 class="gamma" id="inspecting-the-postgresql-database">Inspecting the PostgreSQL database</h3><p>If you want to inspect or manipulate the SQL database directly (e.g. to edit a user, create or delete a group), you can connect to the PostgreSQL database.</p><p>In development mode, the database is exposed on the host at <code>127.0.0.1:5432</code>. (User, password and database name are all <code>aleph</code>). You can also connect from the shell container:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #B392F0">make</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">shell</span></span>
+<span class="line"><span style="color: #B392F0">psql</span><span style="color: #E1E4E8"> $ALEPH_DATABASE_URI</span></span></code></pre>
+</div><p>The same can be done if you run an instance of the <code>shell</code> container in production mode.</p><h2 class="beta" id="production-deployment">Production deployment</h2>
+
+<div class="Callout astro-HEOOEAXT">
+  <p>This section details how to <strong>set up Aleph in production mode</strong>. If you plan to change the source code or quickly test the software, you may wish to use the <a href="/developers/installation#developer-setup">Developer setup</a> instead.</p>
+</div><p>Aleph is distributed as a set of Docker containers, which can be run on any server that meets the following criteria:</p><ul class="unordered-list">
+<li>8GB (or more) of RAM. While the software will start with much less, we advise providing ample main memory for ideal performance.</li>
+<li>A working install of <a href="https://www.docker.com/">Docker</a> and <code>docker-compose</code>. See <a href="/developers/technical-faq#can-i-run-aleph-without-using-docker">the FAQ page</a> for information on not using Docker.</li>
+<li>A domain name or IP address which can be used at the root via HTTPS (i.e. Aleph doesn’t support running at a sub-path like <code>/aleph</code>). You are welcome to contribute fixes for this scenario.</li>
+<li>An internet connection to download and install the package.</li>
+</ul><p>To begin a production deployment:</p><ul class="unordered-list">
+<li>Obtain a copy of Aleph’s <a href="https://github.com/alephdata/aleph/blob/master/docker-compose.yml">docker-compose</a> file and <a href="https://github.com/alephdata/aleph/blob/master/aleph.env.tmpl">base configurations</a> (named <code>aleph.env.tmpl</code>).</li>
+<li>Make a copy of the configurations file named <code>aleph.env</code> and define settings for your production instance. Check the <a href="/developers/installation#configuration">section on configuration</a> for more information regarding the available options.</li>
+</ul>
+
+<div class="Callout astro-HEOOEAXT">
+  <p>Aleph has support for multiple storage engines, including Amazon Web Services Simple Storage Service, Google storage buckets, and local file storage. Remember to configure this in your instance’s configuration file.</p>
+</div><ul class="unordered-list">
+<li>Set <code>ALEPH_TAG</code> environment variable to specify the version of Aleph you want deploy. If <code>ALEPH_TAG</code> is not set, the stable version specified in the docker compose file is deployed.</li>
+<li>Once you are happy with your configuration, execute the following command to allow ElasticSearch to map its memory:</li>
+</ul>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #B392F0">sudo</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">sysctl</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">-w</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">vm.max_map_count=</span><span style="color: #79B8FF">262144</span></span></code></pre>
+</div><ul class="unordered-list">
+<li>Finally, you can boot the docker-compose environment:</li>
+</ul>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #B392F0">docker-compose</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">up</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">-d</span></span></code></pre>
+</div><p>This will run Aleph in detached mode. You can shut down the system at any time by issuing the following command:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #B392F0">docker-compose</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">down</span></span></code></pre>
+</div><p>Before Aleph can process any requests or data, you need to make sure it sets up the database and search index correctly by executing an upgrade:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #B392F0">docker-compose</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">run</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">--rm</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">shell</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">aleph</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">upgrade</span></span></code></pre>
+</div><p>While the system is running, it will bind to to port <code>8080</code> of its host machine and accept incoming connections. You can check that the system is functional with a curl request:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #B392F0">curl</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">http://localhost:8080/api/2/statistics</span></span></code></pre>
+</div><p>If your servers firewall configuration allows it, you can now also open <code>http://localhost:8080</code> in your browser and use the web interface to navigate the application.</p>
+
+<div class="Callout Callout--danger astro-HEOOEAXT">
+  <p>Be careful with the ports exposed from your Docker system on public ports. Docker is known to override some firewall rules so make sure you double-check that you’re only exposing the intended ports on your productions system.</p>
+</div><h3 class="gamma" id="upgrading">Upgrading</h3><p>See the <a href="/developers/technical-faq#how-do-i-upgrade-to-a-new-version-of-aleph">relevant section in the Technical FAQ</a>.</p><h3 class="gamma" id="backing-up-and-restoring-data">Backing up and restoring data</h3><p>Aleph stores persistent data in 3 different systems:</p><ol class="ordered-list">
+<li>Blob storage: This is where Aleph stores the uploaded files as blobs.</li>
+<li>SQL Database: Aleph has a couple of different use cases for a SQL database.
+<ul class="unordered-list">
+<li>A database to store application data like users, sessions, collection metadata etc. This database is the one defined by <code>ALEPH_DATABASE_URI</code> setting.</li>
+<li>A database to store FtM entities. This database is defined by <code>FTM_STORE_URI</code>. These two databases can use the same SQL database instance or can use separate instance for each use case.</li>
+</ul>
+</li>
+<li>ElasticSearch: ElasticSearch powers Aleph’s search and stores the contents of all processed documents and entities.</li>
+</ol><p>To have a functional Aleph instance, we need all 3 of these components to be operational without data loss and have a restoration plan if we any of these components experience data corruption, data loss or any other failure.</p><p>For blob storage, Aleph can use cloud storage services like Google Cloud Storage, AWS S3 which provide automatic backups and availability guarantees. In case you’re using the local file system for storage, the docker volume can be mapped to a host directory, and the host directory can be backed up in usual ways. (for example, running <code>rsync</code> in a cron job to copy the directory to a backup server.)</p><p>For SQL database, Aleph uses PostgreSQL. PostgreSQL can be backed up and restored through <code>pg_dump</code>, <code>pg_restore</code> and similar utilities.</p><p>For example, here’s how you can dump the database:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">docker-compose exec postgres pg_dumpall -c -U postgres &gt; dump_`date +%Y-%m-%d&quot;_&quot;%H:%M:%S`.sql</span></span></code></pre>
+</div><p>and then restore from the dump:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">cat dump_2021-11-03_18:03:54.sql | docker-compose exec -T postgres psql -U aleph -d aleph</span></span></code></pre>
+</div><p>The commands will be slightly different depending on your specific set up. If you’re running a separate database instance for FtM-Store, you should backup both the Aleph application database and the FtM-Store database. The data dump creation command should be put in a cron job to automate snapshot creation and those snapshots should be copied to a separate backup server.</p><p>The ElasticSearch index can be regenerated from the FtM-Store database. So, the backup of that database can serve as the backup of your ElasticsSearch index too.</p><p>Note: This works only for Aleph versions greater than 3.8.0.</p><p>Here’s how you can recreate the ElasticSearch index from the FtM-Store database:</p><ol class="ordered-list">
+<li>Run <code>docker-compose run --rm shell aleph upgrade</code> to recreate the indices in Elasticsearch</li>
+<li>Once that finishes running, run <code>docker-compose run --rm shell aleph reindex-full</code> to write data into Elasticsearch indices from the FtM-Store PostgreSQL database.This will take some time to run depending on how much data you have.</li>
+</ol><h2 class="beta" id="configuration">Configuration</h2><p>The main configuration file of Aleph is <code>aleph.env</code>, which is loaded by docker-compose and can modify many aspects of system behaviour. A template for the configuration with details regarding many of the options is available in the <code>aleph.env.tmpl</code> file.</p><h3 class="gamma" id="configuration-options">Configuration options</h3><ul class="unordered-list">
+<li>You will need to provide a value for the <code>ALEPH_SECRET_KEY</code>. A good example of a value is the output of <code>openssl rand -hex 24</code>.</li>
+<li>Aleph needs to know the URL under which the web interface is mounted. Make sure to set the correct public <code>ALEPH_UI_URL</code>.</li>
+</ul><h3 class="gamma" id="pages-configuration">Pages configuration</h3><p>Some instance-specific information, e.g. ‘About’ page, is configured with pages mechanism. You can find default examples in <code>aleph/pages</code> directory.</p><h3 class="gamma" id="app-wide-message-banner">App-wide message banner</h3><p>You can enable an app-wide message banner displayed at the top of every page for anonymous and authenticated users. This can be useful if you want to inform Aleph about scheduled maintenance, degraded performance, or newly available datasets.</p>
+
+
+
+<figure class="Figure astro-TGCFY6BO">
+  
+  <div class="Image astro-S2MT6LW7" style="--image-width: 2604;--image-height: 1884;--image-density: 1;">
+    <a class="Image__link astro-S2MT6LW7" title="Expand image" href="/assets/Screenshot 2022-08-03 at 18.46.23.png" target="_blank">
+      <img src="/assets/Screenshot 2022-08-03 at 18.46.23.png" loading="lazy" class="astro-S2MT6LW7">
+    </a>
+  </div>
+  
+  
+</figure><p>There are two ways to configure the contents of the message banner.</p><h4 class="delta" id="define-a-static-message">Define a static message</h4><p>The easiest way to enable the message banner is to set the <code>ALEPH_APP_BANNER</code> environment variable. For example, the following configuration will display the message “Planned downtime this Sunday”:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">ALEPH_APP_BANNER=&quot;Planned downtime this Sunday&quot;</span></span></code></pre>
+</div><h4 class="delta" id="configure-a-json-endpoint-to-load-messages-dynamically">Configure a JSON endpoint to load messages dynamically</h4><p>Alternatively, you can also configure a JSON endpoint. Aleph will then load messages from that endpoint. Configuring a JSON endpoint allows you to update messages without changing the configuration or restarting your Aleph instance.</p><p>As long as the JSON data conforms to the simple schema described below, you can use any method that fits your requirements to generate it. You could manually create a JSON file and upload it to a web server or generate it automatically based on a monitoring tool you use.</p><p>We have also created a custom GitHub Action that creates such JSON data based on GitHub Issues and deploys it for free to GitHub Pages. Head over to <a href="https://github.com/alephdata/status-page-action">the repository on GitHub</a> to learn how to set it up for yourself.</p><p>In order to enable loading messages via a JSON endpoint, set the value of the <code>ALEPH_APP_MESSAGES_URL</code> environment variable:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">ALEPH_APP_MESSAGES_URL=&quot;https://example.org/messages.json&quot;</span></span></code></pre>
+</div><p>The JSON response returned by the endpoint should conform to the following schema:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">[</span></span>
+<span class="line"><span style="color: #e1e4e8">  {</span></span>
+<span class="line"><span style="color: #e1e4e8">    &quot;id&quot;: &quot;1&quot;,</span></span>
+<span class="line"><span style="color: #e1e4e8">    &quot;createdAt&quot;: &quot;2022-07-01T08:30:00.000Z&quot;,</span></span>
+<span class="line"><span style="color: #e1e4e8">    &quot;updatedAt&quot;: &quot;2022-07-01T08:30:00.000Z&quot;,</span></span>
+<span class="line"><span style="color: #e1e4e8">    &quot;displayUntil&quot;: &quot;2022-07-10T10:00.000Z&quot;,</span></span>
+<span class="line"><span style="color: #e1e4e8">    &quot;level&quot;: &quot;info&quot;,</span></span>
+<span class="line"><span style="color: #e1e4e8">    &quot;title&quot;: &quot;Scheduled maintenance on Jul 10, 2022, 8–10am UTC&quot;,</span></span>
+<span class="line"><span style="color: #e1e4e8">    &quot;safeHtmlBody&quot;: &quot;We will upgrade Aleph’s server infrastructure. Aleph will be unavailable during this time frame.&quot;</span></span>
+<span class="line"><span style="color: #e1e4e8">  }</span></span>
+<span class="line"><span style="color: #e1e4e8">]</span></span></code></pre>
+</div><ul class="unordered-list">
+<li><code>level</code> can be one of <code>info</code>, <code>warning</code>, <code>error</code>, <code>success</code>. The message banner is color coded based on the level.</li>
+<li>If you set <code>displayUntil</code> to a valid date, the message banner will only be displayed until that date.</li>
+<li>You can include multiple messages in the list. However, only the first message with an empty or a future <code>displayUntil</code> date will be displayed.</li>
+</ul><h3 class="gamma" id="oauth-credentials">OAuth Credentials</h3><p>Using OAuth for login is optional. Skip this section (and leave the config commented out) if you don’t want to use it.</p><p>Aleph supports a couple of OAuth providers out of the box: Google, Facebook and Microsoft Azure.</p><h4 class="delta" id="using-google-oauth">Using Google OAuth</h4><p>To get the OAuth credentials please visit the <a href="https://console.developers.google.com/">Google Developers Console</a>. There you will need to <a href="https://support.google.com/googleapi/answer/6158862">create an API key</a>. In the <strong>Authorised redirect URIs</strong> section, use this URL:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">http://localhost:8080/api/2/sessions/callback/google</span></span></code></pre>
+</div><p>Save the client ID and the client secret as <code>ALEPH_OAUTH_*</code> values.</p><h4 class="delta" id="using-microsoft-azure">Using Microsoft Azure</h4><p>Create a new app over at <a href="https://apps.dev.microsoft.com/">https://apps.dev.microsoft.com</a>, make a note of the KEY and secret you generate there. Callback URL should be as follows: <a href="https://api/2/sessions/callback">https:///api/2/sessions/callback</a> . Then add the following to aleph.env, remember to update KEY and SECRET with your values.</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">ALEPH_OAUTH=true</span></span>
+<span class="line"><span style="color: #e1e4e8">ALEPH_OAUTH_KEY=***************************</span></span>
+<span class="line"><span style="color: #e1e4e8">ALEPH_OAUTH_SECRET=***************************</span></span>
+<span class="line"><span style="color: #e1e4e8">ALEPH_OAUTH_NAME=Azure</span></span>
+<span class="line"><span style="color: #e1e4e8">ALEPH_OAUTH_BASE_URL=https://login.microsoftonline.com/organizations/oauth2/v2.0/</span></span>
+<span class="line"><span style="color: #e1e4e8">ALEPH_OAUTH_AUTHORIZE_URL=https://login.microsoftonline.com/organizations/oauth2/v2.0/authorize</span></span>
+<span class="line"><span style="color: #e1e4e8">ALEPH_OAUTH_TOKEN_URL=https://login.microsoftonline.com/common/oauth2/token</span></span>
+<span class="line"><span style="color: #e1e4e8">ALEPH_OAUTH_SCOPE=openid profile email user.read</span></span>
+<span class="line"><span style="color: #e1e4e8">ALEPH_OAUTH_TOKEN_METHOD=POST</span></span></code></pre>
+</div><h3 class="gamma" id="sentry">Sentry</h3><p>Aleph is able to report issues to a <a href="https://www.sentry.io">Sentry</a> instance. To enable this you need to create a project in your Sentry instance and configure the <code>SENTRY_DSN</code> setting in Aleph. Leaving this setting empty disables the feature.</p><p>You can set the <a href="https://docs.sentry.io/platforms/python/configuration/environments/">environment</a> via the <code>SENTRY_ENVIRONMENT</code> setting.</p><h3 class="gamma" id="mutual-tls">Mutual TLS</h3><p>To provide an extra layer of security, it is possible to configure the services (postgres, redis and elasticsearch) to speak mutual TLS (mTLS) with each other. Managing client certificates for this matter requires some encryption knowledge and experience and is a seperate topic that can not be covered within this documentation.</p><p>Once you have configured and deployed the services with TLS, the connection settings in the environment vars need to be adjusted:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8"># redis</span></span>
+<span class="line"><span style="color: #e1e4e8">REDIS_URL=&quot;rediss://:&lt;password&gt;@redis:6379/0?ssl_certfile=/certs/redis.crt&amp;ssl_keyfile=/certs/redis.key&amp;ssl_ca_certs=/certs/ca.crt&quot;</span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8"># postgres</span></span>
+<span class="line"><span style="color: #e1e4e8">ALEPH_DATABASE_URI=&quot;postgresql://&lt;user&gt;:&lt;password&gt;@postgres/aleph?sslmode=verify-full&amp;sslrootcert=/certs/ca.crt&amp;sslcert=/certs/postgres.crt&amp;sslkey=/certs/postgres.key&quot;</span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8"># elasticsearch</span></span>
+<span class="line"><span style="color: #e1e4e8">ALEPH_ELASTICSEARCH_URI=https://&lt;user&gt;:&lt;password&gt;@elasticsearch:9200</span></span>
+<span class="line"><span style="color: #e1e4e8">ELASTICSEARCH_TLS_CA_CERTS=/certs/ca.crt</span></span>
+<span class="line"><span style="color: #e1e4e8">ELASTICSEARCH_TLS_CLIENT_CERT=/certs/elastic.crt</span></span>
+<span class="line"><span style="color: #e1e4e8">ELASTICSEARCH_TLS_CLIENT_KEY=/certs/elastic.key</span></span>
+<span class="line"><span style="color: #e1e4e8">ELASTICSEARCH_TLS_VERIFY_CERTS=1</span></span></code></pre>
+</div><h3 class="gamma" id="scaling-workers">Scaling workers</h3><p>Workers in Aleph (the <code>aleph-worker</code> as well as <code>ingest-file</code>) are based off common code in <a href="https://github.com/alephdata/servicelayer">servicelayer</a>. Based on the <code>WORKER_THREADS</code> setting these workers are able to run either in-process or in threads. The default value will start as many threads as Python’s <a href="https://docs.python.org/3/library/multiprocessing.html#multiprocessing.cpu_count">multiprocessing.cpu_count()</a> reports. For the purpose of scaling workers and getting more predictable performance Aleph’s disable threading by setting the <code>WORKER_THREADS=0</code>, thus running one worker per process. This way one would scale the amount of necessary workers by scaling up the container count.</p><h2 class="beta" id="troubleshooting">Troubleshooting</h2><p>Troubleshooting help can be found in the <a href="/developers/technical-faq">Technical FAQ</a>.</p>
+</div>
+  
+  
+  
+
+  
+  
+
+        
+</div>
+      </main>
+    
+</div>
+  </div>
+
+  <script>(function(){const layout = "docs";
+
+    // Persist the sidebar scroll position on subsequent page views using the
+    // same layout. The same layout usually renders the same sidebar contents,
+    // e.g. the DocsLayout always renders the DocsNav.
+    (function () {
+      const STORAGE_KEY = 'sidebar-scroll-top';
+      const sidebar = document.querySelector('#main-sidebar');
+
+      if (!layout || !sidebar) {
+        return;
+      }
+
+      // Store the current scroll position when user navigates away or switches tabs.
+      document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'hidden') {
+          const value = JSON.stringify({ [layout]: sidebar.scrollTop });
+          localStorage.setItem(STORAGE_KEY, value);
+        }
+      });
+
+      // Restore scroll position on page load.
+      let scrollTop = localStorage.getItem(STORAGE_KEY);
+      scrollTop = scrollTop && JSON.parse(scrollTop)[layout];
+      localStorage.removeItem(STORAGE_KEY);
+
+      if (scrollTop) {
+        sidebar.scrollTo(0, scrollTop);
+      }
+    })();
+  })();</script>
+
+  </body></html>

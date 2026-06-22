@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Command-Line – Aleph</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/_astro/hoisted.2dfbd17d.css" />
+<link rel="stylesheet" href="/_astro/index.f70b7d34.css" />
+<link rel="stylesheet" href="/_astro/index.8ee8c38b.css" />
+<link rel="stylesheet" href="/_astro/index.a2ee5a0d.css" /><script type="module" src="/_astro/hoisted.bc71e440.js"></script></head>
+  <body>
+    
+
+<a class="SkipLink astro-DF2DBLBO" href="#content">
+  Skip to content
+</a>
+
+    
+
+<header class="Header astro-PTS2MPZI">
+  
+
+<div class="Wrapper Wrapper--padded Header__wrapper astro-PTS2MPZI astro-5QJF6FES">
+  
+    <a href="/" class="Header__title astro-PTS2MPZI" translate="no">
+      Aleph
+    </a>
+
+    <div class="Header__nav astro-PTS2MPZI">
+          
+
+<nav class="HeaderNav astro-BIH2FJRL">
+  <ul class="astro-BIH2FJRL">
+    <li class="HeaderNav__item astro-BIH2FJRL">
+          <a href="/users" class="astro-BIH2FJRL">Users</a>
+        </li><li class="HeaderNav__item HeaderNav__item--active astro-BIH2FJRL">
+          <a href="/developers" class="astro-BIH2FJRL">Developers</a>
+        </li>
+  </ul>
+</nav>
+        </div><div class="Header__translations astro-PTS2MPZI">
+          
+
+
+
+<div class="LanguageSelector astro-63743BKI" hidden>
+  
+
+<div class="Icon LanguageSelector__icon astro-63743BKI astro-4FCJ53EQ" aria-hidden="true">
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="astro-4FCJ53EQ">
+        <path d="M7.75 2.75a.75.75 0 00-1.5 0v1.258a32.987 32.987 0 00-3.599.278.75.75 0 10.198 1.487A31.545 31.545 0 018.7 5.545 19.381 19.381 0 017 9.56a19.418 19.418 0 01-1.002-2.05.75.75 0 00-1.384.577 20.935 20.935 0 001.492 2.91 19.613 19.613 0 01-3.828 4.154.75.75 0 10.945 1.164A21.116 21.116 0 007 12.331c.095.132.192.262.29.391a.75.75 0 001.194-.91c-.204-.266-.4-.538-.59-.815a20.888 20.888 0 002.333-5.332c.31.031.618.068.924.108a.75.75 0 00.198-1.487 32.832 32.832 0 00-3.599-.278V2.75z" class="astro-4FCJ53EQ"></path>
+        <path fill-rule="evenodd" d="M13 8a.75.75 0 01.671.415l4.25 8.5a.75.75 0 11-1.342.67L15.787 16h-5.573l-.793 1.585a.75.75 0 11-1.342-.67l4.25-8.5A.75.75 0 0113 8zm2.037 6.5L13 10.427 10.964 14.5h4.073z" clip-rule="evenodd" class="astro-4FCJ53EQ"></path>
+      </svg>
+</div>
+  <span class="LanguageSelector__label astro-63743BKI" aria-hidden="true">
+    English
+  </span>
+  
+
+<div class="Icon LanguageSelector__chevron astro-63743BKI astro-4FCJ53EQ" aria-hidden="true">
+  
+
+  
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="astro-4FCJ53EQ">
+        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" class="astro-4FCJ53EQ"></path>
+      </svg>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  <label for="language-selector" class="visually-hidden astro-63743BKI">
+    Select language:
+  </label>
+
+  <select id="language-selector" class="LanguageSelector__select astro-63743BKI">
+    <option selected value="" translate="no" class="astro-63743BKI">
+      English
+    </option>
+    <option value="es" lang="es" translate="no" class="astro-63743BKI">
+          Español
+        </option><option value="pt" lang="pt" translate="no" class="astro-63743BKI">
+          Português
+        </option><option value="fr" lang="fr" translate="no" class="astro-63743BKI">
+          Français
+        </option>
+  </select>
+</div>
+        </div><div class="Header__search astro-PTS2MPZI">
+          
+
+
+
+<div id="algolia-docsearch" data-algolia-app-id="T36QKHHSVS" data-algolia-api-key="b462393bca678070ceb9abf533aeeb0b" data-algolia-index-name="aleph-occrp">
+</div>
+        </div>
+</div>
+</header>
+
+    
+  <div class="DefaultLayout astro-63CSQH4F">
+    
+
+<div class="Wrapper Wrapper--padded DefaultLayout__wrapper astro-63CSQH4F astro-5QJF6FES">
+  <div class="DefaultLayout__sidebar DefaultLayout__left astro-63CSQH4F" id="main-sidebar">
+            
+
+
+
+<div class="ExpandableSidebar astro-AR35RRUP" id="expandable-sidebar">
+  <button class="ExpandableSidebar__toggle astro-AR35RRUP" id="expandable-sidebar-toggle" aria-expanded="false" aria-controls="expandable-sidebar-content">
+    
+
+<div class="Icon astro-4FCJ53EQ" aria-hidden="true">
+  
+
+  
+
+  
+
+  
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="astro-4FCJ53EQ">
+        <path fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10zm0 5.25a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" class="astro-4FCJ53EQ"></path>
+      </svg>
+
+  
+
+  
+
+  
+
+  
+</div>
+    <span class="ExpandableSidebar__show astro-AR35RRUP">Show navigation</span>
+    <span class="ExpandableSidebar__hide astro-AR35RRUP">Hide navigation</span>
+  </button>
+
+  <div class="ExpandableSidebar__content astro-AR35RRUP" id="expandable-sidebar-content">
+    
+    
+
+<nav class="astro-UAI3XTHD">
+  <ul class="astro-UAI3XTHD">
+    
+
+<li class="NavSection astro-EJN57FPH">
+  <span class="section-heading astro-EJN57FPH">Tech Docs</span>
+  <ul class="astro-EJN57FPH">
+    
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/developers/installation" class="astro-7VDFTENJ">
+    Installing Aleph
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/developers/followthemoney" class="astro-7VDFTENJ">
+    FollowTheMoney
+    
+  </a>
+
+  <ul class="NavItem__children astro-7VDFTENJ">
+        
+
+<li class="NavItem NavItem--active astro-7VDFTENJ">
+  <a href="/developers/followthemoney/ftm" class="astro-7VDFTENJ">
+    Command-Line
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="https://followthemoney.tech/" class="astro-7VDFTENJ">
+    Technical Reference
+    
+
+<div class="Icon NavItem__icon astro-7VDFTENJ astro-4FCJ53EQ" aria-hidden="true">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="astro-4FCJ53EQ">
+        <path fill-rule="evenodd" d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5z" clip-rule="evenodd" class="astro-4FCJ53EQ"></path>
+        <path fill-rule="evenodd" d="M6.194 12.753a.75.75 0 001.06.053L16.5 4.44v2.81a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.553l-9.056 8.194a.75.75 0 00-.053 1.06z" clip-rule="evenodd" class="astro-4FCJ53EQ"></path>
+      </svg>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</div>
+  </a>
+
+  
+</li>
+      </ul>
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/developers/memorious" class="astro-7VDFTENJ">
+    Crawling data with Memorious
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/developers/alephclient" class="astro-7VDFTENJ">
+    alephclient CLI
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/developers/mappings" class="astro-7VDFTENJ">
+    Importing structured data
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/developers/mixed-graphs" class="astro-7VDFTENJ">
+    Mixed document/entity graphs
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/developers/adding-text-processors" class="astro-7VDFTENJ">
+    Adding text processors
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/developers/technical-faq" class="astro-7VDFTENJ">
+    Technical FAQ
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/developers/developer-tools" class="astro-7VDFTENJ">
+    Developer tools
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/developers/datacommons" class="astro-7VDFTENJ">
+    Data commons
+    
+  </a>
+
+  
+</li>
+  </ul>
+</li>
+
+<li class="NavSection astro-EJN57FPH">
+  <span class="section-heading astro-EJN57FPH">Reference</span>
+  <ul class="astro-EJN57FPH">
+    
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="https://redocly.github.io/redoc/?url=https://aleph.occrp.org/api/openapi.json" class="astro-7VDFTENJ">
+    Aleph API
+    
+
+<div class="Icon NavItem__icon astro-7VDFTENJ astro-4FCJ53EQ" aria-hidden="true">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="astro-4FCJ53EQ">
+        <path fill-rule="evenodd" d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5z" clip-rule="evenodd" class="astro-4FCJ53EQ"></path>
+        <path fill-rule="evenodd" d="M6.194 12.753a.75.75 0 001.06.053L16.5 4.44v2.81a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.553l-9.056 8.194a.75.75 0 00-.053 1.06z" clip-rule="evenodd" class="astro-4FCJ53EQ"></path>
+      </svg>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</div>
+  </a>
+
+  
+</li>
+  </ul>
+</li>
+  </ul>
+</nav>
+  
+  </div>
+</div>
+          </div><div class="DefaultLayout__sidebar DefaultLayout__right astro-63CSQH4F">
+            
+
+<div class="Stack astro-4ZDCY3LK">
+  
+              
+
+<div class="TocNav">
+      
+        <h2 id="toc-nav-heading" class="section-heading">
+          On this page
+        </h2>
+
+        
+
+<nav aria-labelledby="toc-nav-heading" class="astro-UAI3XTHD">
+  <ul class="astro-UAI3XTHD">
+    
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#installation" class="astro-7VDFTENJ">
+    Installation
+    
+  </a>
+
+  <ul class="NavItem__children astro-7VDFTENJ">
+        
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#optional-enhanced-transliteration-support" class="astro-7VDFTENJ">
+    Optional: Enhanced transliteration support
+    
+  </a>
+
+  
+</li>
+      </ul>
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#executing-a-data-mapping" class="astro-7VDFTENJ">
+    Executing a data mapping
+    
+  </a>
+
+  <ul class="NavItem__children astro-7VDFTENJ">
+        
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#loading-data-from-a-local-csv-file" class="astro-7VDFTENJ">
+    Loading data from a local CSV file
+    
+  </a>
+
+  
+</li>
+      </ul>
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#exporting-entities-to-excel-or-csv" class="astro-7VDFTENJ">
+    Exporting entities to Excel or CSV
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#exporting-data-to-a-network-graph" class="astro-7VDFTENJ">
+    Exporting data to a network graph
+    
+  </a>
+
+  <ul class="NavItem__children astro-7VDFTENJ">
+        
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#cypher-commands-for-neo4j" class="astro-7VDFTENJ">
+    Cypher commands for Neo4J
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#gexf-for-gephisigmajs" class="astro-7VDFTENJ">
+    GEXF for Gephi/Sigma.js
+    
+  </a>
+
+  
+</li>
+      </ul>
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#exporting-entities-to-rdflinked-data" class="astro-7VDFTENJ">
+    Exporting entities to RDF/Linked Data
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#importing-open-contracting-data" class="astro-7VDFTENJ">
+    Importing Open Contracting data
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#aggregating-entities-using-ftm-store" class="astro-7VDFTENJ">
+    Aggregating entities using ftm-store
+    
+  </a>
+
+  
+</li>
+  </ul>
+</nav>
+      
+    </div>
+              
+
+<div class="Meta astro-EVT4MHHE">
+  <a href="https://github.com/alephdata/aleph/commits/main/docs/src/pages/developers/followthemoney/ftm.mdx" noreferrer noopener class="astro-EVT4MHHE">Last updated on 2023-07-24.</a>
+  <br class="astro-EVT4MHHE">
+  <a href="https://github.com/alephdata/aleph/edit/main/docs/src/pages/developers/followthemoney/ftm.mdx" noreferrer noopener class="astro-EVT4MHHE">Edit this page on GitHub.</a>
+</div>
+            
+</div>
+          </div><main class="DefaultLayout__content astro-63CSQH4F" id="content">
+        
+
+<div class="Wrapper Wrapper--prose astro-5QJF6FES">
+  
+          
+  
+  
+  
+
+<div class="RichContent astro-B2ZQFBP5">
+  <h1 class="alpha" id="command-line">Command-Line</h1><p class="lead"><p>The ftm command-line tool can be used to generate or export followthemoney data.</p></p><p><strong>ftm</strong> is a command-line tool that is part of the Python implementation of the <a href="/developers/followthemoney">Follow the Money</a> data model. It can be used to generate, process and export streams of entities in a line-based JSON format. Typical uses would include:</p><ul class="unordered-list">
+<li>Generating FtM entities by applying an <a href="/developers/mappings">entity mapping to structured data tables</a> (CSV, SQL). These entities can then be loaded into an instance of Aleph using the <a href="/developers/alephclient">alephclient</a> command.</li>
+<li>Converting an existing stream of FtM entities (e.g. from the Aleph API) into another format, such as CSV, Excel, Gephi GEXF or Neo4J’s Cypher language.</li>
+<li>Converting data in complex formats, such as the Open Contracting Data Standard, into FtM entities.</li>
+<li><em>Work in Progress:</em> Enriching FtM entities from other data sources, such as OCCRP Aleph, OpenCorporates or Wikidata.</li>
+</ul><h2 class="beta" id="installation">Installation</h2><p>To install ftm, you need to have Python 3 installed and working on your computer. You may also want to create a virtual environment using virtualenv or pyenv. With that done, type:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #B392F0">pip</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">install</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">followthemoney</span></span>
+<span class="line"><span style="color: #B392F0">ftm</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">--help</span></span></code></pre>
+</div><h3 class="gamma" id="optional-enhanced-transliteration-support">Optional: Enhanced transliteration support</h3><p>One of the jobs of followthemoney is to transliterate text from various alphabets into the latin script to support the comparison of names. The normal tool used for this is prone to fail with certain alphabets, e.g. the Azeri language. For that reason, we recommend also installing ICU (International components for Unicode).</p><p>On a Debian-based Linux system, installing ICU is relatively simple:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #B392F0">apt</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">install</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">libicu-dev</span></span>
+<span class="line"><span style="color: #B392F0">pip</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">install</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">pyicu</span></span></code></pre>
+</div><p>The Mac OS version of installing ICU is a bit complicated, and requires you to have Homebrew installed:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #B392F0">brew</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">install</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">icu4c</span></span>
+<span class="line"><span style="color: #B392F0">env</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">CFLAGS=-I/usr/local/opt/icu4c/include</span></span>
+<span class="line"><span style="color: #B392F0">env</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">LDFLAGS=-L/usr/local/opt/icu4c/lib</span></span>
+<span class="line"><span style="color: #E1E4E8">PATH</span><span style="color: #F97583">=</span><span style="color: #E1E4E8">$PATH</span><span style="color: #9ECBFF">:/usr/local/opt/icu4c/bin</span></span>
+<span class="line"><span style="color: #B392F0">pip</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">install</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">pyicu</span></span></code></pre>
+</div><h2 class="beta" id="executing-a-data-mapping">Executing a data mapping</h2><p>Probably the most common task for ftm is to generate FtM entities from some structured data source. This is done using a YAML-formatted mapping file, <a href="/developers/mappings">described here</a>. With such a YAML file in hand, you can generate FtM entities like this:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #B392F0">curl</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">-o</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">md_companies.yml</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">https://raw.githubusercontent.com/alephdata/aleph/master/mappings/md_companies.yml</span></span>
+<span class="line"><span style="color: #B392F0">ftm</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">map</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">md_companies.yml</span></span></code></pre>
+</div><p>This will yield a line-based JSON stream of every company in Moldova, their directors and principal shareholders.</p>
+
+
+
+<figure class="Figure astro-TGCFY6BO">
+  
+  <div class="Image astro-S2MT6LW7" style="--image-width: 1952;--image-height: 1226;--image-density: 2;">
+    <a class="Image__link astro-S2MT6LW7" title="Expand image" href="/assets/Screenshot 2019-08-29 at 23.24.51.png" target="_blank">
+      <img src="/assets/Screenshot 2019-08-29 at 23.24.51.png" alt="Screenshot of a terminal window. The terminal shows the output of the `ftm map` command to generate the Moldovan company data." loading="lazy" class="astro-S2MT6LW7">
+    </a>
+  </div>
+  
+  
+</figure><p>You might note, however, that this actually generates multiple entity fragments for each company (i.e. multiple entities with the same ID). This is due to the way the md_companies mapping is written: each query section generates a partial company record. In order to mitigate this, you will need to perform entity aggregation:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #B392F0">curl</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">-o</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">md_companies.yml</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">https://raw.githubusercontent.com/alephdata/aleph/master/mappings/md_companies.yml</span></span>
+<span class="line"><span style="color: #B392F0">ftm</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">map</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">md_companies.yml</span><span style="color: #E1E4E8"> </span><span style="color: #F97583">|</span><span style="color: #E1E4E8"> </span><span style="color: #B392F0">ftm</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">aggregate</span><span style="color: #E1E4E8"> </span><span style="color: #F97583">&gt;</span><span style="color: #9ECBFF">moldova.ijson</span></span></code></pre>
+</div><p>The call for <code>ftm aggregate</code> will retain the entire dataset in memory, which is impossible to do for large databases. In such cases, it’s recommended to use an on-disk entity aggregation tool, <code>followthemoney-store</code>.</p><h3 class="gamma" id="loading-data-from-a-local-csv-file">Loading data from a local CSV file</h3><p>Another peculiarity of <code>ftm map</code> is that the source data is actually referenced within the YAML mapping file as an absolute URL. While this makes sense for data sourced from a SQL database or a public CSV file, you might sometimes want to map a local CSV file instead. For this, a modified version of <code>ftm map</code> is provided, <code>ftm map-csv</code>. It ignores the specified source URLs and reads data from standard input:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #B392F0">cat</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">people_of_interest.csv</span><span style="color: #E1E4E8"> </span><span style="color: #F97583">|</span><span style="color: #E1E4E8"> </span><span style="color: #B392F0">ftm</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">map-csv</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">people_of_interest.yml</span><span style="color: #E1E4E8"> </span><span style="color: #F97583">|</span><span style="color: #E1E4E8"> </span><span style="color: #B392F0">ftm</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">aggregate</span></span></code></pre>
+</div><h2 class="beta" id="exporting-entities-to-excel-or-csv">Exporting entities to Excel or CSV</h2><p>Follow the Money data can be exported to tabular formats, such as modern Excel (XLSX) files, and comma-separated values (CSV). Since each schema of entities has a different set of properties it makes sense to turn each schema into a separate table: <code>People</code> go into one, <code>Directorships</code> into another.</p><p>To export to an Excel file, use the <code>ftm export-excel</code> command:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #B392F0">curl</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">-o</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">us_ofac.ijson</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">https://storage.googleapis.com/occrp-data-exports/us_ofac/us_ofac.json</span></span>
+<span class="line"><span style="color: #B392F0">cat</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">us_ofac.ijson</span><span style="color: #E1E4E8"> </span><span style="color: #F97583">|</span><span style="color: #E1E4E8"> </span><span style="color: #B392F0">ftm</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">validate</span><span style="color: #E1E4E8"> </span><span style="color: #F97583">|</span><span style="color: #E1E4E8"> </span><span style="color: #B392F0">ftm</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">export-excel</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">-o</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">OFAC.xlsx</span></span></code></pre>
+</div><p>Since writing the binary data of an Excel file to standard output is awkward, it is mandatory to include a file name with the <code>-o</code> option.</p>
+
+
+
+<figure class="Figure astro-TGCFY6BO">
+  
+  <div class="Image astro-S2MT6LW7" style="--image-width: 2078;--image-height: 1402;--image-density: 2;">
+    <a class="Image__link astro-S2MT6LW7" title="Expand image" href="/assets/Screenshot 2019-09-01 at 20.26.02.png" target="_blank">
+      <img src="/assets/Screenshot 2019-09-01 at 20.26.02.png" alt="Screenshot of Microsoft Excel showing the export from the example above. The Excel file has multiple sheets, one for each entity type (e.g. People, Companies, and Ownerships)." loading="lazy" class="astro-S2MT6LW7">
+    </a>
+  </div>
+  
+  
+</figure>
+
+<div class="Callout Callout--danger astro-HEOOEAXT">
+  <p>When exporting to Excel format, it’s easy to generate a workbook larger than what Microsoft Excel and similar office programs can actually open. Only export small and mid-size datasets.</p>
+</div><p>When exporting to CSV format using <code>ftm export-csv</code>, the exporter will usually generate multiple output files, one for each schema of entities present in the input stream of Follow the Money entities. To handle this, it expects to be given a directory name:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #B392F0">curl</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">-o</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">us_ofac.ijson</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">https://storage.googleapis.com/occrp-data-exports/us_ofac/us_ofac.json</span></span>
+<span class="line"><span style="color: #B392F0">cat</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">us_ofac.ijson</span><span style="color: #E1E4E8"> </span><span style="color: #F97583">|</span><span style="color: #E1E4E8"> </span><span style="color: #B392F0">ftm</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">validate</span><span style="color: #E1E4E8"> </span><span style="color: #F97583">|</span><span style="color: #E1E4E8"> </span><span style="color: #B392F0">ftm</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">export-csv</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">-o</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">OFAC/</span></span></code></pre>
+</div><p>In the given directory, you will find files names <code>Person.csv</code>, <code>LegalEntity.csv</code>, <code>Vessel.csv</code>, etc.</p>
+
+<div class="Callout astro-HEOOEAXT">
+  <p>Exporting to CSV and Excel also works for textual documents like PDFs or E-Mails that have been uploaded to an Aleph server. This can be a useful way to get the contents of a set of documents into a spreadsheet and work with them there.</p>
+</div><h2 class="beta" id="exporting-data-to-a-network-graph">Exporting data to a network graph</h2><p>Follow the Money sees every unit of information as an entity with a set of properties. To analyse this information as a network with nodes and edges, we need to decide what logic should rule the transformation of entities into nodes and edges. Different strategies are available:</p><ul class="unordered-list">
+<li>Some entity schemata, such as <code>Directorship</code>, <code>Ownership</code>, <code>Family</code> or <code>Payment</code>, contain annotations that define how they can be transformed into an edge with a source and target.</li>
+<li>Entities also naturally reference others. For example, an <code>Email</code> has an <code>emitters</code> property that refers to a <code>LegalEntity</code>, the sender. The <code>emitters</code> property connects the two entities and can also be turned into an edge.</li>
+<li>Finally, some types of properties (e.g. <code>email</code>, <code>iban</code>, <code>names</code>) can be formed into nodes, with edges formed towards each node that derives from an entity with that property value. For example, an <code>address</code> node for “40 Wall Street” would show links to all the companies registered there, or a node representing the name “Frank Smith” would connect all the documents mentioning that name.</li>
+</ul><p>It rarely makes sense to turn all property types into nodes, so the set of types that need to be <a href="https://en.wikipedia.org/wiki/Reification_(computer_science)">reified</a> can be passed as options into the graph exporter.</p><h3 class="gamma" id="cypher-commands-for-neo4j">Cypher commands for Neo4J</h3><p><a href="https://neo4j.com/">Neo4J</a> is a popular open source graph database that can be queried and edited <a href="https://neo4j.com/docs/cypher-refcard/current/">using the Cypher language</a>. It can be used as a database backend or queried directly to perform advanced analysis, e.g. to find all paths between two entities.</p><p>The example below uses Neo4J’s <code>cypher-shell</code> command to load the US sanctions list into a local instance of the database:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #B392F0">curl</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">-o</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">us_ofac.ijson</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">https://storage.googleapis.com/occrp-data-exports/us_ofac/us_ofac.json</span></span>
+<span class="line"><span style="color: #B392F0">cat</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">us_ofac.ijson</span><span style="color: #E1E4E8"> </span><span style="color: #F97583">|</span><span style="color: #E1E4E8"> </span><span style="color: #B392F0">ftm</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">export-cypher</span><span style="color: #E1E4E8"> </span><span style="color: #F97583">|</span><span style="color: #E1E4E8"> </span><span style="color: #B392F0">cypher-shell</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">-u</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">user</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">-p</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">password</span></span></code></pre>
+</div>
+
+
+
+<figure class="Figure astro-TGCFY6BO">
+  
+  <div class="Image astro-S2MT6LW7" style="--image-width: 2736;--image-height: 1654;--image-density: 2;">
+    <a class="Image__link astro-S2MT6LW7" title="Expand image" href="/assets/Screenshot 2019-09-01 at 21.45.28.png" target="_blank">
+      <img src="/assets/Screenshot 2019-09-01 at 21.45.28.png" alt="Screenshot of FtM entities imported to a Neo4J instance." loading="lazy" class="astro-S2MT6LW7">
+    </a>
+  </div>
+  
+  
+</figure><p>By default, this will only make explicit edges based on entity to entity relationships. If you want to reify specific property types, use the <code>-e</code> option:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #B392F0">cat</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">us_ofac.ijson</span><span style="color: #E1E4E8"> </span><span style="color: #F97583">|</span><span style="color: #E1E4E8"> </span><span style="color: #B392F0">ftm</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">export-cypher</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">-e</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">name</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">-e</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">iban</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">-e</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">entity</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">-e</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">address</span></span></code></pre>
+</div><p>When working with file-based datasets, you may want to delete folder hierarchies from the imported data in Neo4J to avoid file co-location biasing path and density analyses:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8"># Delete folder hierarchies:</span></span>
+<span class="line"><span style="color: #e1e4e8">MATCH ()-[r:ANCESTORS]-() DELETE r;</span></span>
+<span class="line"><span style="color: #e1e4e8">MATCH ()-[r:PARENT]-() DELETE r;</span></span>
+<span class="line"><span style="color: #e1e4e8"># Delete entities representing individual pages:</span></span>
+<span class="line"><span style="color: #e1e4e8">MATCH (n:Page) DETACH DELETE n;</span></span>
+<span class="line"><span style="color: #e1e4e8"># Delete names or email only used once:</span></span>
+<span class="line"><span style="color: #e1e4e8">MATCH (n:name) WHERE size((n)--()) &lt;= 1 DETACH DELETE (n);</span></span>
+<span class="line"><span style="color: #e1e4e8">MATCH (n:email) WHERE size((n)--()) &lt;= 1 DETACH DELETE (n);</span></span>
+<span class="line"><span style="color: #e1e4e8">MATCH (n:address) WHERE size((n)--()) &lt;= 1 DETACH DELETE (n);</span></span>
+<span class="line"><span style="color: #e1e4e8"># ... for all reified value types ...</span></span></code></pre>
+</div><p>At any time, you can flush the entire Neo4J and start from scratch:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">MATCH (n) DETACH DELETE n;</span></span></code></pre>
+</div><h4 class="delta" id="bulk-loading-data">Bulk loading data</h4><p>Another option for loading data to Neo4J is to export a set of entities into CSV files and then using the <code>neo4-admin import</code> command to load them into an empty database. This requires shutting down the Neo4J server and then running a command that will write the new database.</p><p>In order to generate data in CSV format suitable for Neo4J import, use the following command:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #B392F0">cat</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">us_ofac.ijson</span><span style="color: #E1E4E8"> </span><span style="color: #F97583">|</span><span style="color: #E1E4E8"> </span><span style="color: #B392F0">ftm</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">export-neo4j-bulk</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">-o</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">folder_name</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">-e</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">iban</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">-e</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">entity</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">-e</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">address</span></span></code></pre>
+</div><p>This will generate a set of CSV files in a folder, and include a shell script file that describes the <code>neo4-admin</code> import command that should be used to load the data into a graph store.</p><h3 class="gamma" id="gexf-for-gephisigmajs">GEXF for Gephi/Sigma.js</h3><p><a href="https://gephi.org/gexf/format/">GEXF</a> (Graph Exchange XML Format) is a file format used by the network analysis software <a href="https://gephi.org/">Gephi</a> and other tools developed in the periphery of the <a href="http://tools.medialab.sciences-po.fr/">Media Lab at Sciences Po</a>. Gephi is particularly suited to do quantitative analysis of graphs with tens of thousands of nodes. It can calculate network metrics like centrality or PageRank, or generate complex visual layouts.</p><p>The command line works analogous to the Neo4J export, also accepting the <code>-e</code> flag for property types that should be turned into nodes:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #B392F0">curl</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">-o</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">us_ofac.ijson</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">https://storage.googleapis.com/occrp-data-exports/us_ofac/us_ofac.json</span></span>
+<span class="line"><span style="color: #B392F0">cat</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">us_ofac.ijson</span><span style="color: #E1E4E8"> </span><span style="color: #F97583">|</span><span style="color: #E1E4E8"> </span><span style="color: #B392F0">ftm</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">validate</span><span style="color: #E1E4E8"> </span><span style="color: #F97583">|</span><span style="color: #E1E4E8"> </span><span style="color: #B392F0">ftm</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">export-cypher</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">-e</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">iban</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">-o</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">ofac.gexf</span></span></code></pre>
+</div>
+
+
+
+<figure class="Figure astro-TGCFY6BO">
+  
+  <div class="Image astro-S2MT6LW7" style="--image-width: 3104;--image-height: 1874;--image-density: 2;">
+    <a class="Image__link astro-S2MT6LW7" title="Expand image" href="/assets/Screenshot 2019-09-01 at 22.03.51.png" target="_blank">
+      <img src="/assets/Screenshot 2019-09-01 at 22.03.51.png" alt="Screenshot of Gephi. A small trove of emails has been visualized as a network. The entity schema type has been used to color nodes, while the size is based on the amount of inbound links (i.e. In-Degree)." loading="lazy" class="astro-S2MT6LW7">
+    </a>
+  </div>
+  
+  
+</figure><h2 class="beta" id="exporting-entities-to-rdflinked-data">Exporting entities to RDF/Linked Data</h2><p>Entity streams of Follow the Money data can also be exported to linked data in the <code>NTriples</code> format.</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #B392F0">curl</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">-o</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">us_ofac.ijson</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">https://storage.googleapis.com/occrp-data-exports/us_ofac/us_ofac.json</span></span>
+<span class="line"><span style="color: #B392F0">cat</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">us_ofac.ijson</span><span style="color: #E1E4E8"> </span><span style="color: #F97583">|</span><span style="color: #E1E4E8"> </span><span style="color: #B392F0">ftm</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">validate</span><span style="color: #E1E4E8"> </span><span style="color: #F97583">|</span><span style="color: #E1E4E8"> </span><span style="color: #B392F0">ftm</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">export-rdf</span></span></code></pre>
+</div><p>It is unclear to the author why this functionality exists, it was just really easy to implement. For those developers who enjoy working with RDF, it might be worthwhile to point out that the underlying ontology (Follow the Money) is also regularly published in <a href="https://alephdata.github.io/followthemoney/ns/ftm.ttl">Turtle</a> and <a href="https://alephdata.github.io/followthemoney/ns/ftm.xml">RDF/XML</a> format.</p><p>By default, the RDF exporter tries to map each entity property to a fully-qualified RDF predicate. Schemas include some mappings to FOAF and similar ontologies. Another concrete use for RDF export, however, is loading data to the dgraph database engine. dgraph prefers simple string predicates over URIs. To achieve this, you can pass the <code>--unqualified</code> flag:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #B392F0">curl</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">-o</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">us_ofac.ijson</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">https://storage.googleapis.com/occrp-data-exports/us_ofac/us_ofac.json</span></span>
+<span class="line"><span style="color: #B392F0">cat</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">us_ofac.ijson</span><span style="color: #E1E4E8"> </span><span style="color: #F97583">|</span><span style="color: #E1E4E8"> </span><span style="color: #B392F0">ftm</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">validate</span><span style="color: #E1E4E8"> </span><span style="color: #F97583">|</span><span style="color: #E1E4E8"> </span><span style="color: #B392F0">ftm</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">export-rdf</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">--unqualified</span></span></code></pre>
+</div><h2 class="beta" id="importing-open-contracting-data">Importing Open Contracting data</h2><p>The <a href="https://standard.open-contracting.org/latest/en/">Open Contracting Data Standard</a> (OCDS) is commonly serialised as a series of JSON objects. <code>ftm</code> includes a function to transform a stream of OCDS objects into FtMs <code>Contracts</code> and <code>ContractAwards</code>. This was developed in particular to import data from the DIGIWHIST <a href="https://opentender.eu/all/download">OpenTender.eu</a> site, so other implementations of OCDS may require extending the importer to accommodate other formats.</p><p>Here’s how you can convert all Cyprus government procurement data to Follow the Money objects:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #B392F0">curl</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">-o</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">CY_ocds_data.json.tar.gz</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">https://opentender.eu/data/files/CY_ocds_data.json.tar.gz</span></span>
+<span class="line"><span style="color: #B392F0">tar</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">xvfz</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">CY_ocds_data.json.tar.gz</span></span>
+<span class="line"><span style="color: #B392F0">cat</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">CY_ocds_data.json</span><span style="color: #E1E4E8"> </span><span style="color: #F97583">|</span><span style="color: #E1E4E8"> </span><span style="color: #B392F0">ftm</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">import-ocds</span><span style="color: #E1E4E8"> </span><span style="color: #F97583">|</span><span style="color: #E1E4E8"> </span><span style="color: #B392F0">ftm</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">aggregate</span><span style="color: #E1E4E8"> </span><span style="color: #F97583">&gt;</span><span style="color: #9ECBFF">cy_contracts.ijson</span></span></code></pre>
+</div><p>Depending on how large the OCDS dataset is, you may want to use <code>followthemoney-store</code> instead of <code>ftm aggregate</code>.</p><h2 class="beta" id="aggregating-entities-using-ftm-store">Aggregating entities using ftm-store</h2><p>While the method of streaming Follow the Money entities is very convenient, there are situations where not all information about an entity is known at the time at which it is generated. For example, think of a <a href="/developers/mappings">mapping</a> that loads company names from one CSV file, while the corresponding addresses are in a second, separate CSV table. In such cases, it is easier to generate two entities with the same ID and to merge them later.</p><p>Merging such entity fragments requires sorting all the entities in the given dataset by their ID in order to aggregate their properties. For small datasets, this can be done in application memory using the <code>ftm aggregate</code>command.</p><p>Once the dataset size approaches the amount of available memory, however, sorting must be performed on disk. This is also true when entity fragments are generated on different nodes in a computing cluster.</p><p>For this purpose, <code>followthemoney-store</code> is available as a Python library and a command line tool. It can use any SQL database as a backend, with a local SQLite file set as a default. When using PostgreSQL as a database, <code>followthemoney-store</code> can use its built-in upsert functionality, making the backend more performant than others.</p><p>To use <code>followthemoney-store</code> with SQLite, install it like this:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #B392F0">pip</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">install</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">followthemoney-store</span></span></code></pre>
+</div><p>For PostgreSQL support, use the following settings:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #B392F0">pip</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">install</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">followthemoney-store[postgresql]</span></span>
+<span class="line"><span style="color: #F97583">export</span><span style="color: #E1E4E8"> FTM_STORE_URI</span><span style="color: #F97583">=</span><span style="color: #9ECBFF">postgresql://localhost/followthemoney</span></span></code></pre>
+</div><p>Once installed, you can operate the <code>followthemoney-store</code> command in read or write mode:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #B392F0">curl</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">-o</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">us_ofac.ijson</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">https://storage.googleapis.com/occrp-data-exports/us_ofac/us_ofac.json</span></span>
+<span class="line"><span style="color: #B392F0">cat</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">us_ofac.ijson</span><span style="color: #E1E4E8"> </span><span style="color: #F97583">|</span><span style="color: #E1E4E8"> </span><span style="color: #B392F0">ftm</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">store</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">write</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">-d</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">us_ofac</span></span>
+<span class="line"><span style="color: #B392F0">ftm</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">store</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">iterate</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">-d</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">us_ofac</span><span style="color: #E1E4E8"> </span><span style="color: #F97583">|</span><span style="color: #E1E4E8"> </span><span style="color: #B392F0">alephclient</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">write-entities</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">-f</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">us_ofac</span></span>
+<span class="line"><span style="color: #B392F0">ftm</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">store</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">delete</span><span style="color: #E1E4E8"> </span><span style="color: #79B8FF">-d</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">us_ofac</span></span></code></pre>
+</div>
+
+<div class="Callout Callout--danger astro-HEOOEAXT">
+  <p>When aggregating entities with large fragments of text, a size limit applies. By default, no entity is allowed to grow larger than 50MB of raw text. Additional text fragments are discarded with a warning.</p>
+</div>
+</div>
+  
+  
+  
+
+  
+  
+
+        
+</div>
+      </main>
+    
+</div>
+  </div>
+
+  <script>(function(){const layout = "docs";
+
+    // Persist the sidebar scroll position on subsequent page views using the
+    // same layout. The same layout usually renders the same sidebar contents,
+    // e.g. the DocsLayout always renders the DocsNav.
+    (function () {
+      const STORAGE_KEY = 'sidebar-scroll-top';
+      const sidebar = document.querySelector('#main-sidebar');
+
+      if (!layout || !sidebar) {
+        return;
+      }
+
+      // Store the current scroll position when user navigates away or switches tabs.
+      document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'hidden') {
+          const value = JSON.stringify({ [layout]: sidebar.scrollTop });
+          localStorage.setItem(STORAGE_KEY, value);
+        }
+      });
+
+      // Restore scroll position on page load.
+      let scrollTop = localStorage.getItem(STORAGE_KEY);
+      scrollTop = scrollTop && JSON.parse(scrollTop)[layout];
+      localStorage.removeItem(STORAGE_KEY);
+
+      if (scrollTop) {
+        sidebar.scrollTo(0, scrollTop);
+      }
+    })();
+  })();</script>
+
+  </body></html>

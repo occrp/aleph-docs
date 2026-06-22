@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Searches, filters, and alerts – Aleph</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/_astro/hoisted.2dfbd17d.css" />
+<link rel="stylesheet" href="/_astro/index.f70b7d34.css" />
+<link rel="stylesheet" href="/_astro/index.8ee8c38b.css" />
+<link rel="stylesheet" href="/_astro/index.a2ee5a0d.css" /><script type="module" src="/_astro/hoisted.bc71e440.js"></script></head>
+  <body>
+    
+
+<a class="SkipLink astro-DF2DBLBO" href="#content">
+  Skip to content
+</a>
+
+    
+
+<header class="Header astro-PTS2MPZI">
+  
+
+<div class="Wrapper Wrapper--padded Header__wrapper astro-PTS2MPZI astro-5QJF6FES">
+  
+    <a href="/" class="Header__title astro-PTS2MPZI" translate="no">
+      Aleph
+    </a>
+
+    <div class="Header__nav astro-PTS2MPZI">
+          
+
+<nav class="HeaderNav astro-BIH2FJRL">
+  <ul class="astro-BIH2FJRL">
+    <li class="HeaderNav__item HeaderNav__item--active astro-BIH2FJRL">
+          <a href="/users" class="astro-BIH2FJRL">Users</a>
+        </li><li class="HeaderNav__item astro-BIH2FJRL">
+          <a href="/developers" class="astro-BIH2FJRL">Developers</a>
+        </li>
+  </ul>
+</nav>
+        </div><div class="Header__translations astro-PTS2MPZI">
+          
+
+
+
+<div class="LanguageSelector astro-63743BKI" hidden>
+  
+
+<div class="Icon LanguageSelector__icon astro-63743BKI astro-4FCJ53EQ" aria-hidden="true">
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="astro-4FCJ53EQ">
+        <path d="M7.75 2.75a.75.75 0 00-1.5 0v1.258a32.987 32.987 0 00-3.599.278.75.75 0 10.198 1.487A31.545 31.545 0 018.7 5.545 19.381 19.381 0 017 9.56a19.418 19.418 0 01-1.002-2.05.75.75 0 00-1.384.577 20.935 20.935 0 001.492 2.91 19.613 19.613 0 01-3.828 4.154.75.75 0 10.945 1.164A21.116 21.116 0 007 12.331c.095.132.192.262.29.391a.75.75 0 001.194-.91c-.204-.266-.4-.538-.59-.815a20.888 20.888 0 002.333-5.332c.31.031.618.068.924.108a.75.75 0 00.198-1.487 32.832 32.832 0 00-3.599-.278V2.75z" class="astro-4FCJ53EQ"></path>
+        <path fill-rule="evenodd" d="M13 8a.75.75 0 01.671.415l4.25 8.5a.75.75 0 11-1.342.67L15.787 16h-5.573l-.793 1.585a.75.75 0 11-1.342-.67l4.25-8.5A.75.75 0 0113 8zm2.037 6.5L13 10.427 10.964 14.5h4.073z" clip-rule="evenodd" class="astro-4FCJ53EQ"></path>
+      </svg>
+</div>
+  <span class="LanguageSelector__label astro-63743BKI" aria-hidden="true">
+    English
+  </span>
+  
+
+<div class="Icon LanguageSelector__chevron astro-63743BKI astro-4FCJ53EQ" aria-hidden="true">
+  
+
+  
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="astro-4FCJ53EQ">
+        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" class="astro-4FCJ53EQ"></path>
+      </svg>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  <label for="language-selector" class="visually-hidden astro-63743BKI">
+    Select language:
+  </label>
+
+  <select id="language-selector" class="LanguageSelector__select astro-63743BKI">
+    <option selected value="" translate="no" class="astro-63743BKI">
+      English
+    </option>
+    <option value="es" lang="es" translate="no" class="astro-63743BKI">
+          Español
+        </option><option value="pt" lang="pt" translate="no" class="astro-63743BKI">
+          Português
+        </option><option value="fr" lang="fr" translate="no" class="astro-63743BKI">
+          Français
+        </option>
+  </select>
+</div>
+        </div><div class="Header__search astro-PTS2MPZI">
+          
+
+
+
+<div id="algolia-docsearch" data-algolia-app-id="T36QKHHSVS" data-algolia-api-key="b462393bca678070ceb9abf533aeeb0b" data-algolia-index-name="aleph-occrp">
+</div>
+        </div>
+</div>
+</header>
+
+    
+  <div class="DefaultLayout astro-63CSQH4F">
+    
+
+<div class="Wrapper Wrapper--padded DefaultLayout__wrapper astro-63CSQH4F astro-5QJF6FES">
+  <div class="DefaultLayout__sidebar DefaultLayout__left astro-63CSQH4F" id="main-sidebar">
+            
+
+
+
+<div class="ExpandableSidebar astro-AR35RRUP" id="expandable-sidebar">
+  <button class="ExpandableSidebar__toggle astro-AR35RRUP" id="expandable-sidebar-toggle" aria-expanded="false" aria-controls="expandable-sidebar-content">
+    
+
+<div class="Icon astro-4FCJ53EQ" aria-hidden="true">
+  
+
+  
+
+  
+
+  
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="astro-4FCJ53EQ">
+        <path fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10zm0 5.25a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" class="astro-4FCJ53EQ"></path>
+      </svg>
+
+  
+
+  
+
+  
+
+  
+</div>
+    <span class="ExpandableSidebar__show astro-AR35RRUP">Show navigation</span>
+    <span class="ExpandableSidebar__hide astro-AR35RRUP">Hide navigation</span>
+  </button>
+
+  <div class="ExpandableSidebar__content astro-AR35RRUP" id="expandable-sidebar-content">
+    
+    
+
+<nav class="astro-UAI3XTHD">
+  <ul class="astro-UAI3XTHD">
+    
+
+<li class="NavSection astro-EJN57FPH">
+  <span class="section-heading astro-EJN57FPH">Getting started</span>
+  <ul class="astro-EJN57FPH">
+    
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/users/getting-started/account" class="astro-7VDFTENJ">
+    Manage your account
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/users/getting-started/key-terms" class="astro-7VDFTENJ">
+    Key terms
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/users/getting-started/homepage" class="astro-7VDFTENJ">
+    Navigate the homepage
+    
+  </a>
+
+  
+</li>
+  </ul>
+</li>
+
+<li class="NavSection astro-EJN57FPH">
+  <span class="section-heading astro-EJN57FPH">Search</span>
+  <ul class="astro-EJN57FPH">
+    
+
+<li class="NavItem NavItem--active astro-7VDFTENJ">
+  <a href="/users/search/basics" class="astro-7VDFTENJ">
+    Searches, filters, and alerts
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/users/search/advanced" class="astro-7VDFTENJ">
+    Advanced search
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/users/search/datasets" class="astro-7VDFTENJ">
+    Searching within specific datasets
+    
+  </a>
+
+  
+</li>
+  </ul>
+</li>
+
+<li class="NavSection astro-EJN57FPH">
+  <span class="section-heading astro-EJN57FPH">Investigations</span>
+  <ul class="astro-EJN57FPH">
+    
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/users/investigations/overview" class="astro-7VDFTENJ">
+    About investigation workspaces
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/users/investigations/create" class="astro-7VDFTENJ">
+    Creating an investigation workspace
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/users/investigations/manage-access" class="astro-7VDFTENJ">
+    Manage access
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/users/investigations/uploading-documents" class="astro-7VDFTENJ">
+    Uploading documents
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/users/investigations/entity-editor" class="astro-7VDFTENJ">
+    Creating and editing entities
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/users/investigations/cross-referencing" class="astro-7VDFTENJ">
+    Cross-referencing your data
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/users/investigations/network-diagrams" class="astro-7VDFTENJ">
+    Drawing network diagrams
+    
+  </a>
+
+  
+</li>
+  </ul>
+</li>
+
+<li class="NavSection astro-EJN57FPH">
+  <span class="section-heading astro-EJN57FPH">FAQ</span>
+  <ul class="astro-EJN57FPH">
+    
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/users/faq/account" class="astro-7VDFTENJ">
+    Account &amp; Recovery
+    
+  </a>
+
+  
+</li>
+  </ul>
+</li>
+
+<li class="NavSection astro-EJN57FPH">
+  <span class="section-heading astro-EJN57FPH">Advanced</span>
+  <ul class="astro-EJN57FPH">
+    
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/users/advanced/reconciliation" class="astro-7VDFTENJ">
+    OpenRefine Reconciliation
+    
+  </a>
+
+  
+</li>
+  </ul>
+</li>
+  </ul>
+</nav>
+  
+  </div>
+</div>
+          </div><div class="DefaultLayout__sidebar DefaultLayout__right astro-63CSQH4F">
+            
+
+<div class="Stack astro-4ZDCY3LK">
+  
+              
+
+<div class="TocNav">
+      
+        <h2 id="toc-nav-heading" class="section-heading">
+          On this page
+        </h2>
+
+        
+
+<nav aria-labelledby="toc-nav-heading" class="astro-UAI3XTHD">
+  <ul class="astro-UAI3XTHD">
+    
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#basic-search" class="astro-7VDFTENJ">
+    Basic search
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#previewing-a-result" class="astro-7VDFTENJ">
+    Previewing a result
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#filtering-results" class="astro-7VDFTENJ">
+    Filtering results
+    
+  </a>
+
+  <ul class="NavItem__children astro-7VDFTENJ">
+        
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#filtering-by-date" class="astro-7VDFTENJ">
+    Filtering by date
+    
+  </a>
+
+  
+</li>
+      </ul>
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#creating-alerts" class="astro-7VDFTENJ">
+    Creating alerts
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#download-a-document" class="astro-7VDFTENJ">
+    Download a document
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#export-multiple-search-results" class="astro-7VDFTENJ">
+    Export multiple search results
+    
+  </a>
+
+  
+</li>
+  </ul>
+</nav>
+      
+    </div>
+              
+
+<div class="Meta astro-EVT4MHHE">
+  <a href="https://github.com/alephdata/aleph/commits/main/docs/src/pages/users/search/basics/index.mdx" noreferrer noopener class="astro-EVT4MHHE">Last updated on 2023-07-24.</a>
+  <br class="astro-EVT4MHHE">
+  <a href="https://github.com/alephdata/aleph/edit/main/docs/src/pages/users/search/basics/index.mdx" noreferrer noopener class="astro-EVT4MHHE">Edit this page on GitHub.</a>
+</div>
+            
+</div>
+          </div><main class="DefaultLayout__content astro-63CSQH4F" id="content">
+        
+
+<div class="Wrapper Wrapper--prose astro-5QJF6FES">
+  
+          
+  
+  
+  
+
+<div class="RichContent astro-B2ZQFBP5">
+  <h1 class="alpha" id="how-to-do-searches-filter-and-set-alerts">How to do searches, filter, and set alerts</h1><p class="lead">The section below explains how to carry out a basic search, view, bookmark, and filter your results, and create e-mail alerts for terms of interest.</p>
+
+<article class="VideoTutorial astro-ZHV5UTIP">
+  <div class="VideoTutorial__info astro-ZHV5UTIP">
+    <h2 class="VideoTutorial__heading section-heading astro-ZHV5UTIP">Video tutorial</h2>
+    <p class="astro-ZHV5UTIP">
+      Are you in a hurry and don't have time to read? Watch our short video on
+      how to create an Aleph account.
+    </p>
+  </div>
+  
+
+<iframe class="Youtube astro-VFL73A2N" src="https://www.youtube-nocookie.com/embed/I3AxSMBzJ14?color=white&#38;iv_load_policy=3&#38;modestbranding=1&#38;rel=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</article><h2 class="beta" id="basic-search">Basic search</h2><p>Aleph’s site-wide search bar is located at the top of any page on the site. This search bar allows you to search across all datasets you have access to in Aleph. It is comprised of several distinct features:</p>
+
+
+
+<figure class="Figure astro-TGCFY6BO">
+  
+  <div class="Image astro-S2MT6LW7" style="--image-width: 1999;--image-height: 591;--image-density: 2;">
+    <a class="Image__link astro-S2MT6LW7" title="Expand image" href="/assets/pages/users/search/basics/search-bar.png" target="_blank">
+      <img src="/assets/pages/users/search/basics/search-bar.png" loading="lazy" class="astro-S2MT6LW7">
+    </a>
+  </div>
+  
+  
+</figure><p>In the search bar, you simply enter the term you are searching for. In this example, we are searching for Vladimir Putin.</p>
+
+
+
+<figure class="Figure astro-TGCFY6BO">
+  
+  <video class="Video astro-MHM2HOES" loop playsinline muted="true" autoplay>
+    <source src="/assets/pages/users/search/basics/basic-search.mp4" type="video/mp4" class="astro-MHM2HOES">
+  </video>
+  
+  
+</figure><p>When you execute a search, the results of your search are listed below the search bar. As you scroll, more of the results will be displayed, until you reach the end of the list. The result count lets you know how many results in total were found matching your term:</p>
+
+
+
+<figure class="Figure astro-TGCFY6BO">
+  
+  <div class="Image astro-S2MT6LW7" style="--image-width: 1950;--image-height: 1112;--image-density: 2;">
+    <a class="Image__link astro-S2MT6LW7" title="Expand image" href="/assets/pages/users/search/basics/search-results.png" target="_blank">
+      <img src="/assets/pages/users/search/basics/search-results.png" loading="lazy" class="astro-S2MT6LW7">
+    </a>
+  </div>
+  
+  
+</figure>
+
+<div class="Callout astro-HEOOEAXT">
+  <p>Keep in mind that Aleph limits the number of search results you can download based on the number of results and document size</p>
+</div><p>With each result, <strong>yellow highlighted</strong> text indicates the context in which your keyword was found. This allows you to eyeball the results and understand why they were returned based on the terms of your search. This can also help you decide if you need to either expand or narrow down your search.</p><h2 class="beta" id="previewing-a-result">Previewing a result</h2>
+
+
+
+<figure class="Figure astro-TGCFY6BO">
+  
+  <div class="Image astro-S2MT6LW7" style="--image-width: 1698;--image-height: 932;--image-density: 2;">
+    <a class="Image__link astro-S2MT6LW7" title="Expand image" href="/assets/pages/users/search/basics/preview.png" target="_blank">
+      <img src="/assets/pages/users/search/basics/preview.png" loading="lazy" class="astro-S2MT6LW7">
+    </a>
+  </div>
+  
+  
+</figure><p>On the screen, click on the possible hits that appear under the <strong>Name</strong> column to explore a preview of a possible match. Go to the <strong>Expand</strong> button to explore the result in full within the specific dataset where your hit appears. The <strong>Download</strong> button allows you to download the file you are previewing.</p><p>You can also use the <strong>Bookmark</strong> button to keep track of all your interesting files and entities you explore in Aleph and you can view your bookmarked files and entities by clicking on <strong>Bookmarks</strong> in the top bar.</p>
+
+<div class="Callout Callout--danger astro-HEOOEAXT">
+  <p>Bookmarks are still an experimental feature and are only stored in your browser. If you delete your browsing data or switch devices, you may lose access to your bookmarks. You can always download a copy of your bookmarks in the bookmarks section.</p>
+</div><p>The <strong>X</strong> button closes the preview, returning you to the main results view.</p><h2 class="beta" id="filtering-results">Filtering results</h2><p>Aleph provides built-in options to filter your search results by country, type of data you are interested in (document, company entity, web page, image, video, etc.), entity type, specific datasets, e-mail addresses, phone numbers, bank accounts, names, language, and so on. You can view all of the built-in options from the left-hand side menu following the execution of a search.</p>
+
+
+
+<figure class="Figure astro-TGCFY6BO">
+  
+  <div class="Image astro-S2MT6LW7" style="--image-width: 1730;--image-height: 980;--image-density: 2;">
+    <a class="Image__link astro-S2MT6LW7" title="Expand image" href="/assets/pages/users/search/basics/facets-sidebar.png" target="_blank">
+      <img src="/assets/pages/users/search/basics/facets-sidebar.png" loading="lazy" class="astro-S2MT6LW7">
+    </a>
+  </div>
+  
+  
+</figure><p>Each filter type provides a list of categories that allow you to select exactly what you most want to see. In addition, options are <strong>sorted from most prevalent to least</strong> with the quantity of occurrences beside it. This number can be quite useful, as it shows the most common options first, giving you an indicator of where to start filtering to narrow down your search.</p><p>When you <strong>select a filter value</strong>, a button appears above the search results indicating that the results are being filtered by that option. If you want to remove the filter, it is easy enough to click on the <strong>X</strong> in the button to remove it.</p><p>In the example below, we are searching for results including both Trump AND Putin and then filtering by the entity type: <strong>e-mail</strong>.</p>
+
+
+
+<figure class="Figure astro-TGCFY6BO">
+  
+  <video class="Video astro-MHM2HOES" controls preload="none" poster="/assets/pages/users/search/basics/filter-email-poster.png">
+    <source src="/assets/pages/users/search/basics/filter-email.mp4" type="video/mp4" class="astro-MHM2HOES">
+  </video>
+  
+  
+</figure><h3 class="gamma" id="filtering-by-date">Filtering by date</h3><p>When selecting the <strong>Dates</strong> filter option, you are able to see a distribution showing the number of results per year. You can use this filter in two ways. By selecting a year, you are able to further filter your search results by month, as well as by day, by clicking on the corresponding bars, depending on your needs. If you are interested in searching throughout a range of dates, you can click and drag bars across the distribution to select a range.<br/>
+See the example below on how to filter by a specific date using the Dates filter.</p>
+
+
+
+<figure class="Figure astro-TGCFY6BO">
+  
+  <video class="Video astro-MHM2HOES" controls preload="none" poster="/assets/pages/users/search/basics/filter-date-poster.png">
+    <source src="/assets/pages/users/search/basics/filter-date.mp4" type="video/mp4" class="astro-MHM2HOES">
+  </video>
+  
+  
+</figure><p>See the example below on how to filter by a range of dates using the Dates filter.</p>
+
+
+
+<figure class="Figure astro-TGCFY6BO">
+  
+  <video class="Video astro-MHM2HOES" controls preload="none" poster="/assets/pages/users/search/basics/filter-date-ranger-poster.png">
+    <source src="/assets/pages/users/search/basics/filter-date-range.mp4" type="video/mp4" class="astro-MHM2HOES">
+  </video>
+  
+  
+</figure><h2 class="beta" id="creating-alerts">Creating alerts</h2><p>Whenever you search a term in Aleph, you can use the <strong>Create alert</strong> button to generate an alert based on the keywords and operators entered in the search bar. Keep in mind that you will not see the Alert button by default in the search bar. It only gets activated once you write a word or term there:</p>
+
+
+
+<figure class="Figure astro-TGCFY6BO">
+  
+  <div class="Image astro-S2MT6LW7" style="--image-width: 1730;--image-height: 172;--image-density: 2;">
+    <a class="Image__link astro-S2MT6LW7" title="Expand image" href="/assets/pages/users/search/basics/alert-button.png" target="_blank">
+      <img src="/assets/pages/users/search/basics/alert-button.png" loading="lazy" class="astro-S2MT6LW7">
+    </a>
+  </div>
+  
+  
+</figure><p>Once selected, you will receive e-mail notifications as well as see alerts in the <a href="/users/getting-started/homepage#notifications">notifications tab</a> when new data is added to Aleph that meet the requirements of your search.</p>
+
+<div class="Callout astro-HEOOEAXT">
+  <p>You will only receive alerts for datasets that you have access to.</p>
+</div><h2 class="beta" id="download-a-document">Download a document</h2><p>Within Aleph, you are able to download individual documents. When clicking on an individual search result, in the pop-up window that appears on the right-hand side of your screen, you simply click on <strong>Download</strong> and the download will start.</p>
+
+<div class="Callout Callout--danger astro-HEOOEAXT">
+  <p>When downloading a file, you are downloading a source file. Source files can contain viruses and code that notify the originator when you open them. For sensitive data, we recommend only opening source files on a computer that is permanently disconnected from the internet.</p>
+</div>
+
+
+
+<figure class="Figure astro-TGCFY6BO">
+  
+  <div class="Image astro-S2MT6LW7" style="--image-width: 1999;--image-height: 996;--image-density: 2;">
+    <a class="Image__link astro-S2MT6LW7" title="Expand image" href="/assets/pages/users/search/basics/download.png" target="_blank">
+      <img src="/assets/pages/users/search/basics/download.png" loading="lazy" class="astro-S2MT6LW7">
+    </a>
+  </div>
+  
+  
+</figure><h2 class="beta" id="export-multiple-search-results">Export multiple search results</h2><p>If you wish to export all search results, in the top center of the screen, you simply click on the <strong>Export</strong> button and the export will start. Depending on the number of search results, preparing your export may take some time.</p>
+
+
+
+<figure class="Figure astro-TGCFY6BO">
+  
+  <div class="Image astro-S2MT6LW7" style="--image-width: 1999;--image-height: 997;--image-density: 2;">
+    <a class="Image__link astro-S2MT6LW7" title="Expand image" href="/assets/pages/users/search/basics/export.png" target="_blank">
+      <img src="/assets/pages/users/search/basics/export.png" loading="lazy" class="astro-S2MT6LW7">
+    </a>
+  </div>
+  
+  
+</figure><p>You can track the status of your exports by navigating to the Aleph homepage followed by clicking on <strong>Exports</strong> from the left-hand side menu or by clicking on your profile name in the upper right-hand corner followed by clicking on <strong>Exports</strong>.</p><p>For more detailed information refer to <a href="/users/getting-started/homepage">How to navigate the Aleph homepage</a>.</p>
+</div>
+  
+  
+  
+
+  
+  
+
+        
+</div>
+      </main>
+    
+</div>
+  </div>
+
+  <script>(function(){const layout = "docs";
+
+    // Persist the sidebar scroll position on subsequent page views using the
+    // same layout. The same layout usually renders the same sidebar contents,
+    // e.g. the DocsLayout always renders the DocsNav.
+    (function () {
+      const STORAGE_KEY = 'sidebar-scroll-top';
+      const sidebar = document.querySelector('#main-sidebar');
+
+      if (!layout || !sidebar) {
+        return;
+      }
+
+      // Store the current scroll position when user navigates away or switches tabs.
+      document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'hidden') {
+          const value = JSON.stringify({ [layout]: sidebar.scrollTop });
+          localStorage.setItem(STORAGE_KEY, value);
+        }
+      });
+
+      // Restore scroll position on page load.
+      let scrollTop = localStorage.getItem(STORAGE_KEY);
+      scrollTop = scrollTop && JSON.parse(scrollTop)[layout];
+      localStorage.removeItem(STORAGE_KEY);
+
+      if (scrollTop) {
+        sidebar.scrollTo(0, scrollTop);
+      }
+    })();
+  })();</script>
+
+  </body></html>

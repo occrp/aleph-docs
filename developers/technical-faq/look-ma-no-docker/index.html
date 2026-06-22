@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Look Ma, No Docker – Aleph</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/_astro/hoisted.2dfbd17d.css" />
+<link rel="stylesheet" href="/_astro/index.f70b7d34.css" />
+<link rel="stylesheet" href="/_astro/index.8ee8c38b.css" />
+<link rel="stylesheet" href="/_astro/index.a2ee5a0d.css" /><script type="module" src="/_astro/hoisted.bc71e440.js"></script></head>
+  <body>
+    
+
+<a class="SkipLink astro-DF2DBLBO" href="#content">
+  Skip to content
+</a>
+
+    
+
+<header class="Header astro-PTS2MPZI">
+  
+
+<div class="Wrapper Wrapper--padded Header__wrapper astro-PTS2MPZI astro-5QJF6FES">
+  
+    <a href="/" class="Header__title astro-PTS2MPZI" translate="no">
+      Aleph
+    </a>
+
+    <div class="Header__nav astro-PTS2MPZI">
+          
+
+<nav class="HeaderNav astro-BIH2FJRL">
+  <ul class="astro-BIH2FJRL">
+    <li class="HeaderNav__item astro-BIH2FJRL">
+          <a href="/users" class="astro-BIH2FJRL">Users</a>
+        </li><li class="HeaderNav__item HeaderNav__item--active astro-BIH2FJRL">
+          <a href="/developers" class="astro-BIH2FJRL">Developers</a>
+        </li>
+  </ul>
+</nav>
+        </div><div class="Header__translations astro-PTS2MPZI">
+          
+
+
+
+<div class="LanguageSelector astro-63743BKI" hidden>
+  
+
+<div class="Icon LanguageSelector__icon astro-63743BKI astro-4FCJ53EQ" aria-hidden="true">
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="astro-4FCJ53EQ">
+        <path d="M7.75 2.75a.75.75 0 00-1.5 0v1.258a32.987 32.987 0 00-3.599.278.75.75 0 10.198 1.487A31.545 31.545 0 018.7 5.545 19.381 19.381 0 017 9.56a19.418 19.418 0 01-1.002-2.05.75.75 0 00-1.384.577 20.935 20.935 0 001.492 2.91 19.613 19.613 0 01-3.828 4.154.75.75 0 10.945 1.164A21.116 21.116 0 007 12.331c.095.132.192.262.29.391a.75.75 0 001.194-.91c-.204-.266-.4-.538-.59-.815a20.888 20.888 0 002.333-5.332c.31.031.618.068.924.108a.75.75 0 00.198-1.487 32.832 32.832 0 00-3.599-.278V2.75z" class="astro-4FCJ53EQ"></path>
+        <path fill-rule="evenodd" d="M13 8a.75.75 0 01.671.415l4.25 8.5a.75.75 0 11-1.342.67L15.787 16h-5.573l-.793 1.585a.75.75 0 11-1.342-.67l4.25-8.5A.75.75 0 0113 8zm2.037 6.5L13 10.427 10.964 14.5h4.073z" clip-rule="evenodd" class="astro-4FCJ53EQ"></path>
+      </svg>
+</div>
+  <span class="LanguageSelector__label astro-63743BKI" aria-hidden="true">
+    English
+  </span>
+  
+
+<div class="Icon LanguageSelector__chevron astro-63743BKI astro-4FCJ53EQ" aria-hidden="true">
+  
+
+  
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="astro-4FCJ53EQ">
+        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" class="astro-4FCJ53EQ"></path>
+      </svg>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  <label for="language-selector" class="visually-hidden astro-63743BKI">
+    Select language:
+  </label>
+
+  <select id="language-selector" class="LanguageSelector__select astro-63743BKI">
+    <option selected value="" translate="no" class="astro-63743BKI">
+      English
+    </option>
+    <option value="es" lang="es" translate="no" class="astro-63743BKI">
+          Español
+        </option><option value="pt" lang="pt" translate="no" class="astro-63743BKI">
+          Português
+        </option><option value="fr" lang="fr" translate="no" class="astro-63743BKI">
+          Français
+        </option>
+  </select>
+</div>
+        </div><div class="Header__search astro-PTS2MPZI">
+          
+
+
+
+<div id="algolia-docsearch" data-algolia-app-id="T36QKHHSVS" data-algolia-api-key="b462393bca678070ceb9abf533aeeb0b" data-algolia-index-name="aleph-occrp">
+</div>
+        </div>
+</div>
+</header>
+
+    
+  <div class="DefaultLayout astro-63CSQH4F">
+    
+
+<div class="Wrapper Wrapper--padded DefaultLayout__wrapper astro-63CSQH4F astro-5QJF6FES">
+  <div class="DefaultLayout__sidebar DefaultLayout__left astro-63CSQH4F" id="main-sidebar">
+            
+
+
+
+<div class="ExpandableSidebar astro-AR35RRUP" id="expandable-sidebar">
+  <button class="ExpandableSidebar__toggle astro-AR35RRUP" id="expandable-sidebar-toggle" aria-expanded="false" aria-controls="expandable-sidebar-content">
+    
+
+<div class="Icon astro-4FCJ53EQ" aria-hidden="true">
+  
+
+  
+
+  
+
+  
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="astro-4FCJ53EQ">
+        <path fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10zm0 5.25a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" class="astro-4FCJ53EQ"></path>
+      </svg>
+
+  
+
+  
+
+  
+
+  
+</div>
+    <span class="ExpandableSidebar__show astro-AR35RRUP">Show navigation</span>
+    <span class="ExpandableSidebar__hide astro-AR35RRUP">Hide navigation</span>
+  </button>
+
+  <div class="ExpandableSidebar__content astro-AR35RRUP" id="expandable-sidebar-content">
+    
+    
+
+<nav class="astro-UAI3XTHD">
+  <ul class="astro-UAI3XTHD">
+    
+
+<li class="NavSection astro-EJN57FPH">
+  <span class="section-heading astro-EJN57FPH">Tech Docs</span>
+  <ul class="astro-EJN57FPH">
+    
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/developers/installation" class="astro-7VDFTENJ">
+    Installing Aleph
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/developers/followthemoney" class="astro-7VDFTENJ">
+    FollowTheMoney
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/developers/memorious" class="astro-7VDFTENJ">
+    Crawling data with Memorious
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/developers/alephclient" class="astro-7VDFTENJ">
+    alephclient CLI
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/developers/mappings" class="astro-7VDFTENJ">
+    Importing structured data
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/developers/mixed-graphs" class="astro-7VDFTENJ">
+    Mixed document/entity graphs
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/developers/adding-text-processors" class="astro-7VDFTENJ">
+    Adding text processors
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/developers/technical-faq" class="astro-7VDFTENJ">
+    Technical FAQ
+    
+  </a>
+
+  <ul class="NavItem__children astro-7VDFTENJ">
+        
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/developers/technical-faq/design-premises" class="astro-7VDFTENJ">
+    Design premises
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem NavItem--active astro-7VDFTENJ">
+  <a href="/developers/technical-faq/look-ma-no-docker" class="astro-7VDFTENJ">
+    Look Ma, No Docker
+    
+  </a>
+
+  
+</li>
+      </ul>
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/developers/developer-tools" class="astro-7VDFTENJ">
+    Developer tools
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/developers/datacommons" class="astro-7VDFTENJ">
+    Data commons
+    
+  </a>
+
+  
+</li>
+  </ul>
+</li>
+
+<li class="NavSection astro-EJN57FPH">
+  <span class="section-heading astro-EJN57FPH">Reference</span>
+  <ul class="astro-EJN57FPH">
+    
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="https://redocly.github.io/redoc/?url=https://aleph.occrp.org/api/openapi.json" class="astro-7VDFTENJ">
+    Aleph API
+    
+
+<div class="Icon NavItem__icon astro-7VDFTENJ astro-4FCJ53EQ" aria-hidden="true">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="astro-4FCJ53EQ">
+        <path fill-rule="evenodd" d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5z" clip-rule="evenodd" class="astro-4FCJ53EQ"></path>
+        <path fill-rule="evenodd" d="M6.194 12.753a.75.75 0 001.06.053L16.5 4.44v2.81a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.553l-9.056 8.194a.75.75 0 00-.053 1.06z" clip-rule="evenodd" class="astro-4FCJ53EQ"></path>
+      </svg>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</div>
+  </a>
+
+  
+</li>
+  </ul>
+</li>
+  </ul>
+</nav>
+  
+  </div>
+</div>
+          </div><div class="DefaultLayout__sidebar DefaultLayout__right astro-63CSQH4F">
+            
+
+<div class="Stack astro-4ZDCY3LK">
+  
+              
+
+<div class="TocNav">
+      
+        <h2 id="toc-nav-heading" class="section-heading">
+          On this page
+        </h2>
+
+        
+
+<nav aria-labelledby="toc-nav-heading" class="astro-UAI3XTHD">
+  <ul class="astro-UAI3XTHD">
+    
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#basic-setup" class="astro-7VDFTENJ">
+    Basic setup
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#postgresql" class="astro-7VDFTENJ">
+    Postgresql
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#elasticsearch" class="astro-7VDFTENJ">
+    Elasticsearch
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#redis" class="astro-7VDFTENJ">
+    Redis
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#aleph" class="astro-7VDFTENJ">
+    Aleph
+    
+  </a>
+
+  <ul class="NavItem__children astro-7VDFTENJ">
+        
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#convert-document" class="astro-7VDFTENJ">
+    convert-document
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#ingest-file" class="astro-7VDFTENJ">
+    ingest-file
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#aleph-worker-and-aleph-api" class="astro-7VDFTENJ">
+    aleph-worker and aleph-api
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#aleph-ui" class="astro-7VDFTENJ">
+    aleph-ui
+    
+  </a>
+
+  
+</li>
+      </ul>
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#final-touches" class="astro-7VDFTENJ">
+    Final touches
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#aleph-configuration" class="astro-7VDFTENJ">
+    Aleph Configuration
+    
+  </a>
+
+  <ul class="NavItem__children astro-7VDFTENJ">
+        
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#create-aleph-users" class="astro-7VDFTENJ">
+    Create Aleph users
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#upgrade-aleph" class="astro-7VDFTENJ">
+    Upgrade Aleph
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#import-data" class="astro-7VDFTENJ">
+    Import data
+    
+  </a>
+
+  
+</li>
+      </ul>
+</li>
+  </ul>
+</nav>
+      
+    </div>
+              
+
+<div class="Meta astro-EVT4MHHE">
+  <a href="https://github.com/alephdata/aleph/commits/main/docs/src/pages/developers/technical-faq/look-ma-no-docker.mdx" noreferrer noopener class="astro-EVT4MHHE">Last updated on 2023-07-24.</a>
+  <br class="astro-EVT4MHHE">
+  <a href="https://github.com/alephdata/aleph/edit/main/docs/src/pages/developers/technical-faq/look-ma-no-docker.mdx" noreferrer noopener class="astro-EVT4MHHE">Edit this page on GitHub.</a>
+</div>
+            
+</div>
+          </div><main class="DefaultLayout__content astro-63CSQH4F" id="content">
+        
+
+<div class="Wrapper Wrapper--prose astro-5QJF6FES">
+  
+          
+  
+  
+  
+
+<div class="RichContent astro-B2ZQFBP5">
+  <h1 class="alpha" id="look-ma-no-docker">Look Ma, No Docker</h1><p class="lead"><p>This guide de-dockerifies Aleph. I use Ubuntu 19.10 as the distribution since this is the distribution of choice of the Aleph docker files. This assumes Aleph 3.4.4.</p></p>
+
+<div class="Callout Callout--danger astro-HEOOEAXT">
+  <p>We don’t recommend using Aleph without Docker. This guide was contributed by a community member, and it is documented here for completeness.</p>
+</div><p>I start with a vanilla Ubuntu server installation and run all commands at the user account that I created during installation. Later on in the installation, I switch to a newly created <code>aleph</code> user account.</p><h2 class="beta" id="basic-setup">Basic setup</h2>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">sudo apt update &amp;&amp; sudo apt upgrade</span></span>
+<span class="line"><span style="color: #e1e4e8">sudo apt install \</span></span>
+<span class="line"><span style="color: #e1e4e8">  apt-transport-https \</span></span>
+<span class="line"><span style="color: #e1e4e8">  build-essential \</span></span>
+<span class="line"><span style="color: #e1e4e8">  ca-certificates \</span></span>
+<span class="line"><span style="color: #e1e4e8">  curl \</span></span>
+<span class="line"><span style="color: #e1e4e8">  gnupg \</span></span>
+<span class="line"><span style="color: #e1e4e8">  locales \</span></span>
+<span class="line"><span style="color: #e1e4e8">  wget</span></span></code></pre>
+</div>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">sudo sed -i -e &#39;s/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/&#39; /etc/locale.gen</span></span>
+<span class="line"><span style="color: #e1e4e8">sudo dpkg-reconfigure locales</span></span>
+<span class="line"><span style="color: #e1e4e8">sudo update-locale LANG=en_US.UTF-8</span></span></code></pre>
+</div><h2 class="beta" id="postgresql">Postgresql</h2><p>The Aleph <code>Dockerfile</code> depend on Postgresql 10. While I believe that Aleph would work with newer versions of Postgresql as well (stock Ubuntu 19.10 comes with Postgresql 11) I choose to stick to the same version of Postgresql.</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">curl https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -</span></span>
+<span class="line"><span style="color: #e1e4e8">sudo sh -c &#39;echo &quot;deb http://apt.postgresql.org/pub/repos/apt/ $(lsb_release -cs)-pgdg main&quot; &gt; /etc/apt/sources.list.d/pgdg.list&#39;</span></span>
+<span class="line"><span style="color: #e1e4e8">sudo apt update</span></span>
+<span class="line"><span style="color: #e1e4e8">sudo apt install postgresql-10</span></span>
+<span class="line"><span style="color: #e1e4e8">sudo systemctl enable postgresql</span></span></code></pre>
+</div><p>Create the database for Aleph. Replace the password with something following better password practices.</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">sudo -u postgres psql</span></span>
+<span class="line"><span style="color: #e1e4e8">create database aleph;</span></span>
+<span class="line"><span style="color: #e1e4e8">create user aleph with encrypted password &#39;aleph&#39;;</span></span>
+<span class="line"><span style="color: #e1e4e8">grant all privileges on database aleph to aleph;</span></span></code></pre>
+</div><h2 class="beta" id="elasticsearch">Elasticsearch</h2><p>To install Elasticsearch I follow the instructions on <a href="https://www.elastic.co/guide/en/elasticsearch/reference/7.5/deb.html">elastic.co</a>. Aleph depends on the latest Elasticsearch docker image which at the time of this writing is 7.5.1.</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -</span></span>
+<span class="line"><span style="color: #e1e4e8">echo &quot;deb https://artifacts.elastic.co/packages/7.x/apt stable main&quot; | sudo tee -a /etc/apt/sources.list.d/elastic-7.x.list</span></span>
+<span class="line"><span style="color: #e1e4e8">sudo apt update</span></span>
+<span class="line"><span style="color: #e1e4e8">sudo apt install elasticsearch</span></span></code></pre>
+</div><p>We install additional plugins for Elasticsearch.</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">sudo /usr/share/elasticsearch/bin/elasticsearch-plugin install --batch discovery-gce</span></span>
+<span class="line"><span style="color: #e1e4e8">sudo /usr/share/elasticsearch/bin/elasticsearch-plugin install --batch repository-s3</span></span>
+<span class="line"><span style="color: #e1e4e8">sudo /usr/share/elasticsearch/bin/elasticsearch-plugin install --batch repository-gcs</span></span>
+<span class="line"><span style="color: #e1e4e8">sudo /usr/share/elasticsearch/bin/elasticsearch-plugin install --batch analysis-icu</span></span></code></pre>
+</div><p>Edit <code>/etc/elasticsearch/elasticsearch.yml</code> and make the server listen only on localhost. As a default, Elasticsearch listens on all IP addresses.</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">network.host: 127.0.0.1</span></span></code></pre>
+</div><p>Edit <code>/etc/elasticsearch/jvm.options</code> and set a proper heap size.</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">-Xms1g</span></span>
+<span class="line"><span style="color: #e1e4e8">-Xmx1g</span></span></code></pre>
+</div>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">sudo sysctl -w vm.max_map_count=262144</span></span>
+<span class="line"><span style="color: #e1e4e8">sudo systemctl enable elasticsearch</span></span>
+<span class="line"><span style="color: #e1e4e8">sudo systemctl start elasticsearch</span></span></code></pre>
+</div><h2 class="beta" id="redis">Redis</h2><p>Redis is straightforward to install. It requires no additional configuration.</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">sudo apt install redis</span></span>
+<span class="line"><span style="color: #e1e4e8">sudo systemctl enable redis-server</span></span>
+<span class="line"><span style="color: #e1e4e8">sudo systemctl start redis-server</span></span></code></pre>
+</div><h2 class="beta" id="aleph">Aleph</h2><p>Aleph itself consists of several services that run independently.</p><ul class="unordered-list">
+<li><code>convert-document</code></li>
+<li><code>ingest-file</code></li>
+<li><code>worker</code></li>
+<li><code>shell</code></li>
+<li><code>api</code></li>
+<li><code>ui</code></li>
+</ul><p>There is a <a href="https://github.com/alephdata/convert-document">dedicated repository</a> for <code>convert-document</code>. The other services are part of the <a href="https://github.com/alephdata/aleph/">standard Aleph repository</a>.</p><p>These are all the packages that the OS has to provide for the different parts of Aleph.</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -</span></span>
+<span class="line"><span style="color: #e1e4e8">sudo apt update</span></span>
+<span class="line"><span style="color: #e1e4e8">sudo apt install \</span></span>
+<span class="line"><span style="color: #e1e4e8">  cython3 \</span></span>
+<span class="line"><span style="color: #e1e4e8">  djvulibre-bin \</span></span>
+<span class="line"><span style="color: #e1e4e8">  fonts-dejavu \</span></span>
+<span class="line"><span style="color: #e1e4e8">  fonts-dejavu-core \</span></span>
+<span class="line"><span style="color: #e1e4e8">  fonts-dejavu-extra \</span></span>
+<span class="line"><span style="color: #e1e4e8">  fonts-droid-fallback \</span></span>
+<span class="line"><span style="color: #e1e4e8">  fonts-dustin \</span></span>
+<span class="line"><span style="color: #e1e4e8">  fonts-f500 \</span></span>
+<span class="line"><span style="color: #e1e4e8">  fonts-fanwood \</span></span>
+<span class="line"><span style="color: #e1e4e8">  fonts-freefont-ttf \</span></span>
+<span class="line"><span style="color: #e1e4e8">  fonts-liberation \</span></span>
+<span class="line"><span style="color: #e1e4e8">  fonts-lmodern \</span></span>
+<span class="line"><span style="color: #e1e4e8">  fonts-lyx \</span></span>
+<span class="line"><span style="color: #e1e4e8">  fonts-opensymbol \</span></span>
+<span class="line"><span style="color: #e1e4e8">  fonts-sil-gentium \</span></span>
+<span class="line"><span style="color: #e1e4e8">  fonts-texgyre \</span></span>
+<span class="line"><span style="color: #e1e4e8">  fonts-tlwg-purisa \</span></span>
+<span class="line"><span style="color: #e1e4e8">  ghostscript \</span></span>
+<span class="line"><span style="color: #e1e4e8">  hyphen-de \</span></span>
+<span class="line"><span style="color: #e1e4e8">  hyphen-en-us \</span></span>
+<span class="line"><span style="color: #e1e4e8">  hyphen-fr \</span></span>
+<span class="line"><span style="color: #e1e4e8">  hyphen-it \</span></span>
+<span class="line"><span style="color: #e1e4e8">  hyphen-ru \</span></span>
+<span class="line"><span style="color: #e1e4e8">  imagemagick \</span></span>
+<span class="line"><span style="color: #e1e4e8">  imagemagick-common \</span></span>
+<span class="line"><span style="color: #e1e4e8">  libfreetype6-dev \</span></span>
+<span class="line"><span style="color: #e1e4e8">  libicu-dev \</span></span>
+<span class="line"><span style="color: #e1e4e8">  libjpeg-dev \</span></span>
+<span class="line"><span style="color: #e1e4e8">  libldap2-dev \</span></span>
+<span class="line"><span style="color: #e1e4e8">  libleptonica-dev \</span></span>
+<span class="line"><span style="color: #e1e4e8">  libmagic-dev \</span></span>
+<span class="line"><span style="color: #e1e4e8">  libmediainfo-dev \</span></span>
+<span class="line"><span style="color: #e1e4e8">  libpq-dev \</span></span>
+<span class="line"><span style="color: #e1e4e8">  libreoffice \</span></span>
+<span class="line"><span style="color: #e1e4e8">  libreoffice-common \</span></span>
+<span class="line"><span style="color: #e1e4e8">  libreoffice-impress \</span></span>
+<span class="line"><span style="color: #e1e4e8">  libreoffice-writer \</span></span>
+<span class="line"><span style="color: #e1e4e8">  librsvg2-bin \</span></span>
+<span class="line"><span style="color: #e1e4e8">  libsasl2-dev \</span></span>
+<span class="line"><span style="color: #e1e4e8">  libtesseract-dev \</span></span>
+<span class="line"><span style="color: #e1e4e8">  libtiff-tools \</span></span>
+<span class="line"><span style="color: #e1e4e8">  libtiff5-dev \</span></span>
+<span class="line"><span style="color: #e1e4e8">  libwebp-dev \</span></span>
+<span class="line"><span style="color: #e1e4e8">  libxml2-dev \</span></span>
+<span class="line"><span style="color: #e1e4e8">  libxslt1-dev \</span></span>
+<span class="line"><span style="color: #e1e4e8">  mdbtools \</span></span>
+<span class="line"><span style="color: #e1e4e8">  nginx \</span></span>
+<span class="line"><span style="color: #e1e4e8">  nodejs \</span></span>
+<span class="line"><span style="color: #e1e4e8">  p7zip-full \</span></span>
+<span class="line"><span style="color: #e1e4e8">  pkg-config\</span></span>
+<span class="line"><span style="color: #e1e4e8">  poppler-data \</span></span>
+<span class="line"><span style="color: #e1e4e8">  poppler-utils \</span></span>
+<span class="line"><span style="color: #e1e4e8">  pst-utils \</span></span>
+<span class="line"><span style="color: #e1e4e8">  python3-crypto \</span></span>
+<span class="line"><span style="color: #e1e4e8">  python3-dev \</span></span>
+<span class="line"><span style="color: #e1e4e8">  python3-icu \</span></span>
+<span class="line"><span style="color: #e1e4e8">  python3-lxml \</span></span>
+<span class="line"><span style="color: #e1e4e8">  python3-pil \</span></span>
+<span class="line"><span style="color: #e1e4e8">  python3-pip \</span></span>
+<span class="line"><span style="color: #e1e4e8">  python3-psycopg2 \</span></span>
+<span class="line"><span style="color: #e1e4e8">  python3-uno \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-afr \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-ara \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-aze \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-bel \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-bul \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-cat \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-ces \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-dan \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-deu \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-ell \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-eng \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-est \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-fin \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-fra \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-frk \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-heb \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-hin \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-hrv \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-hun \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-ind \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-isl \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-ita \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-kan \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-lav \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-lit \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-mkd \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-mlt \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-msa \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-nld \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-nor \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-pol \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-por \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-ron \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-rus \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-slk \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-slv \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-spa \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-sqi \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-srp \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-swa \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-swe \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-tur \</span></span>
+<span class="line"><span style="color: #e1e4e8">  tesseract-ocr-ukr \</span></span>
+<span class="line"><span style="color: #e1e4e8">  unoconv \</span></span>
+<span class="line"><span style="color: #e1e4e8">  unrar \</span></span>
+<span class="line"><span style="color: #e1e4e8">  zlib1g-dev \</span></span>
+<span class="line"><span style="color: #e1e4e8">  virtualenv</span></span></code></pre>
+</div><p>The <code>convert-document</code> service requires python to resolve correctly to python3.</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">sudo ln -s /usr/bin/python3 /usr/local/bin/python</span></span></code></pre>
+</div><p><code>convert-document</code> further relies on a newer version of <code>unoconv</code> than ships with Ubuntu 19.10. As your regular user</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">curl -O https://raw.githubusercontent.com/unoconv/unoconv/0.8.2/unoconv</span></span>
+<span class="line"><span style="color: #e1e4e8">sudo mv unoconv /usr/local/bin/unoconv</span></span>
+<span class="line"><span style="color: #e1e4e8">sudo chmod +x /usr/local/bin/unoconv</span></span></code></pre>
+</div><p>We run Aleph as it’s own dedicated user.</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">sudo groupadd aleph</span></span>
+<span class="line"><span style="color: #e1e4e8">sudo useradd -g aleph aleph</span></span></code></pre>
+</div><p>We split all services into three different virtualenvs, one for <code>convert-document</code>, one for <code>ingest-file</code> and another one that runs <code>aleph-api</code> and <code>aleph-worker</code>. The UI is just static files, so there is no need to place them into a dedicated virtualenv.</p><p>The following steps are all done as the <code>aleph</code> user.</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">sudo -i -u aleph</span></span>
+<span class="line"><span style="color: #e1e4e8">mkdir {data,venvs}</span></span>
+<span class="line"><span style="color: #e1e4e8">git clone https://github.com/alephdata/aleph.git</span></span>
+<span class="line"><span style="color: #e1e4e8">git clone https://github.com/alephdata/convert-document.git</span></span>
+<span class="line"><span style="color: #e1e4e8">cd</span></span>
+<span class="line"><span style="color: #e1e4e8">virtualenv --python=python3 --system-site-packages ~/venvs/convert-document</span></span>
+<span class="line"><span style="color: #e1e4e8">virtualenv --python=python3 --system-site-packages ~/venvs/ingest-file</span></span>
+<span class="line"><span style="color: #e1e4e8">virtualenv --python=python3 --system-site-packages ~/venvs/aleph</span></span>
+<span class="line"><span style="color: #e1e4e8">exit</span></span></code></pre>
+</div><p>Once we have the Aleph source code available we can place the <code>synonames.txt</code> for Elasticsearch to find. We execute this command again as our regular user.</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">sudo cp /home/aleph/aleph/services/elasticsearch/synonames.txt /etc/elasticsearch</span></span></code></pre>
+</div><h3 class="gamma" id="convert-document"><code>convert-document</code></h3><p>Run the following commands as the <code>aleph</code> user.</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">source venvs/convert-document/bin/activate</span></span>
+<span class="line"><span style="color: #e1e4e8">cd ~/convert-document</span></span>
+<span class="line"><span style="color: #e1e4e8">pip install -r requirements.txt</span></span>
+<span class="line"><span style="color: #e1e4e8">pip install .</span></span></code></pre>
+</div><p>Test that everything is working manually if you like:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">gunicorn --threads 3 --bind 127.0.0.1:3000 --max-requests 5000 --access-logfile - --error-logfile - --timeout 600 --graceful-timeout 500 convert.app:app</span></span>
+<span class="line"><span style="color: #e1e4e8">curl -o out.pdf -F format=pdf -F &#39;file=@my-doc.odt&#39; http://localhost:3000/convert</span></span></code></pre>
+</div><p>Exit the virtualenv.</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">deactivate</span></span></code></pre>
+</div><h3 class="gamma" id="ingest-file"><code>ingest-file</code></h3><p>Run the following commands as the <code>aleph</code> user.run the following commands:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">source venvs/ingest-file/bin/activate</span></span>
+<span class="line"><span style="color: #e1e4e8">cd ~/aleph/services/ingest-file</span></span>
+<span class="line"><span style="color: #e1e4e8">pip install -r requirements.txt</span></span>
+<span class="line"><span style="color: #e1e4e8">pip install .</span></span></code></pre>
+</div><p>Exit the virtualenv.</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">deactivate</span></span></code></pre>
+</div><h3 class="gamma" id="aleph-worker-and-aleph-api"><code>aleph-worker</code> and <code>aleph-api</code></h3><p>The following commands are all run as the <code>aleph</code> user.</p><p>Generate a new secret key. This command outputs a long string of characters which we use as our secret key in the Aleph configuration.</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">openssl rand -hex 64</span></span></code></pre>
+</div>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">cat &lt;&lt;EOF &gt; ~/aleph/aleph.env</span></span>
+<span class="line"><span style="color: #e1e4e8">ALEPH_SECRET_KEY=2503698e0d74f47bd87b41ce0978c3db7567d90544554189b72a06b3ef62b2c887768bba79cf812987397f55145bd903fe6c581302fdefe2c8584ce4a3ba8005</span></span>
+<span class="line"><span style="color: #e1e4e8">ALEPH_APP_TITLE=Aleph</span></span>
+<span class="line"><span style="color: #e1e4e8">ALEPH_APP_NAME=aleph</span></span>
+<span class="line"><span style="color: #e1e4e8">ALEPH_UI_URL=https://source.bird.tools</span></span>
+<span class="line"><span style="color: #e1e4e8">ALEPH_URL_SCHEME=https</span></span>
+<span class="line"><span style="color: #e1e4e8">ALEPH_ADMINS=christo@cryptodrunks.net</span></span>
+<span class="line"><span style="color: #e1e4e8">ALEPH_PASSWORD_LOGIN=true</span></span>
+<span class="line"><span style="color: #e1e4e8">ALEPH_OAUTH=false</span></span>
+<span class="line"><span style="color: #e1e4e8">ALEPH_OCR_DEFAULTS=eng</span></span>
+<span class="line"><span style="color: #e1e4e8">ALEPH_DEBUG=false</span></span>
+<span class="line"><span style="color: #e1e4e8">ALEPH_NER_MODELS=eng:deu:fra:spa:por</span></span>
+<span class="line"><span style="color: #e1e4e8">ALEPH_ELASTICSEARCH_URI=http://localhost:9200/</span></span>
+<span class="line"><span style="color: #e1e4e8">ALEPH_DATABASE_URI=postgresql://aleph:aleph@localhost/aleph</span></span>
+<span class="line"><span style="color: #e1e4e8">ALEPH_GEONAMES_DATA=/home/aleph/aleph/contrib/geonames.txt</span></span>
+<span class="line"><span style="color: #e1e4e8">FTM_STORE_URI=postgresql://aleph:aleph@localhost/aleph</span></span>
+<span class="line"><span style="color: #e1e4e8">REDIS_URL=redis://localhost:6379/0</span></span>
+<span class="line"><span style="color: #e1e4e8">ARCHIVE_TYPE=file</span></span>
+<span class="line"><span style="color: #e1e4e8">ARCHIVE_PATH=~/data</span></span>
+<span class="line"><span style="color: #e1e4e8">UNOSERVICE_URL=http://localhost:3000/convert</span></span>
+<span class="line"><span style="color: #e1e4e8">ALEPH_LID_MODEL_PATH=/home/aleph/aleph/contrib/lid.176.ftz</span></span>
+<span class="line"><span style="color: #e1e4e8">EOF</span></span></code></pre>
+</div><p>We add some of the Aleph configuration variables into the user’s environment as well. This becomes handy later on when interacting with Aleph interactively on the shell. We source the new environment profile right away as well.</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">cat &lt;&lt;EOF &gt;&gt; ~/.profile</span></span>
+<span class="line"><span style="color: #e1e4e8">export ALEPH_ELASTICSEARCH_URI=http://localhost:9200/</span></span>
+<span class="line"><span style="color: #e1e4e8">export ALEPH_DATABASE_URI=postgresql://aleph:aleph@localhost/aleph</span></span>
+<span class="line"><span style="color: #e1e4e8">export BALKHASH_BACKEND=postgresql</span></span>
+<span class="line"><span style="color: #e1e4e8">export BALKHASH_DATABASE_URI=postgresql://aleph:aleph@localhost/aleph</span></span>
+<span class="line"><span style="color: #e1e4e8">export REDIS_URL=redis://localhost:6379/0</span></span>
+<span class="line"><span style="color: #e1e4e8">export ARCHIVE_TYPE=file</span></span>
+<span class="line"><span style="color: #e1e4e8">export ARCHIVE_PATH=/home/aleph/data</span></span>
+<span class="line"><span style="color: #e1e4e8">export UNOSERVICE_URL=http://localhost:3000/convert</span></span>
+<span class="line"><span style="color: #e1e4e8">export ALEPHCLIENT_HOST=https://source.bird.tools</span></span>
+<span class="line"><span style="color: #e1e4e8">EOF</span></span>
+<span class="line"><span style="color: #e1e4e8">source ~/.profile</span></span></code></pre>
+</div><p>With the configuration in place, we can continue with the installation of Aleph itself.</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">source venvs/aleph/bin/activate</span></span>
+<span class="line"><span style="color: #e1e4e8">cd ~/aleph</span></span>
+<span class="line"><span style="color: #e1e4e8">pip install -r requirements-generic.txt</span></span>
+<span class="line"><span style="color: #e1e4e8">pip install -r requirements-toolkit.txt</span></span>
+<span class="line"><span style="color: #e1e4e8">pip install . alephclient spacy==2.2.3</span></span>
+<span class="line"><span style="color: #e1e4e8">python3 -m spacy download xx_ent_wiki_sm &amp;&amp; python3 -m spacy link xx_ent_wiki_sm xx</span></span>
+<span class="line"><span style="color: #e1e4e8">python3 -m spacy download en_core_web_sm &amp;&amp; python3 -m spacy link en_core_web_sm eng</span></span>
+<span class="line"><span style="color: #e1e4e8">python3 -m spacy download de_core_news_sm &amp;&amp; python3 -m spacy link de_core_news_sm deu</span></span>
+<span class="line"><span style="color: #e1e4e8">python3 -m spacy download fr_core_news_sm &amp;&amp; python3 -m spacy link fr_core_news_sm fra</span></span>
+<span class="line"><span style="color: #e1e4e8">python3 -m spacy download es_core_news_sm &amp;&amp; python3 -m spacy link es_core_news_sm spa</span></span>
+<span class="line"><span style="color: #e1e4e8">python3 -m spacy download pt_core_news_sm &amp;&amp; python3 -m spacy link pt_core_news_sm por</span></span></code></pre>
+</div><p>Initialize the databases for Aleph. Replace the username and password of the database as needed. While connected to the <code>aleph</code> virtualenv run:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">aleph db init</span></span>
+<span class="line"><span style="color: #e1e4e8">aleph db migrate</span></span>
+<span class="line"><span style="color: #e1e4e8">aleph upgrade</span></span></code></pre>
+</div><p>Exit the virtualenv.</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">deactivate</span></span></code></pre>
+</div><h3 class="gamma" id="aleph-ui"><code>aleph-ui</code></h3><p>Run the following commands as the <code>aleph</code> user.</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">cd ~/aleph/ui</span></span>
+<span class="line"><span style="color: #e1e4e8">npm install</span></span></code></pre>
+</div><p>Create a <code>.env</code> file and set the <code>REACT_APP_API_ENDPOINT</code> variable.</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">REACT_APP_API_ENDPOINT=https://source.bird.tools/api/2</span></span></code></pre>
+</div>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">npm run build</span></span></code></pre>
+</div><h2 class="beta" id="final-touches">Final touches</h2><p>The following commands are all executed as the regular user.</p><p>To start all Aleph automatically at boot, we need to place Systemd service files for the various services of Aleph and configure the webserver.</p><p>Create a <code>systemd</code> service unit for the <code>convert-document</code> service in <code>/etc/systemd/system/convert-document.service</code>:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">[Unit]</span></span>
+<span class="line"><span style="color: #e1e4e8">Description=convert-document daemon</span></span>
+<span class="line"><span style="color: #e1e4e8">After=network.target</span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8">[Service]</span></span>
+<span class="line"><span style="color: #e1e4e8">Type=notify</span></span>
+<span class="line"><span style="color: #e1e4e8">User=aleph</span></span>
+<span class="line"><span style="color: #e1e4e8">Group=aleph</span></span>
+<span class="line"><span style="color: #e1e4e8">RuntimeDirectory=convert-document</span></span>
+<span class="line"><span style="color: #e1e4e8">Environment=&quot;PATH=/home/aleph/venvs/convert-document/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin&quot;</span></span>
+<span class="line"><span style="color: #e1e4e8">WorkingDirectory=/home/aleph/convert-document</span></span>
+<span class="line"><span style="color: #e1e4e8">ExecStart=/home/aleph/venvs/convert-document/bin/gunicorn --threads 3 --bind 127.0.0.1:3000 --max-requests 30 --access-logfile - --error-logfile - --timeout 300 --graceful-timeout 300 convert.app:app</span></span>
+<span class="line"><span style="color: #e1e4e8">ExecReload=/bin/kill -s HUP $MAINPID</span></span>
+<span class="line"><span style="color: #e1e4e8">KillMode=mixed</span></span>
+<span class="line"><span style="color: #e1e4e8">TimeoutStopSec=5</span></span>
+<span class="line"><span style="color: #e1e4e8">PrivateTmp=true</span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8">[Install]</span></span>
+<span class="line"><span style="color: #e1e4e8">WantedBy=multi-user.target</span></span></code></pre>
+</div><p>Create a <code>systemd</code> service unit for the <code>ingest-file</code>service in <code>/etc/systemd/system/ingest-file.service</code>:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">[Unit]</span></span>
+<span class="line"><span style="color: #e1e4e8">Description=ingest-file daemon</span></span>
+<span class="line"><span style="color: #e1e4e8">Wants=redis-server.service postgresql.service convert-document.service</span></span>
+<span class="line"><span style="color: #e1e4e8">After=network.target redis-server.service postgresql.service convert-document.service</span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8">[Service]</span></span>
+<span class="line"><span style="color: #e1e4e8">Type=simple</span></span>
+<span class="line"><span style="color: #e1e4e8">User=aleph</span></span>
+<span class="line"><span style="color: #e1e4e8">Group=aleph</span></span>
+<span class="line"><span style="color: #e1e4e8">RuntimeDirectory=ingest-file</span></span>
+<span class="line"><span style="color: #e1e4e8">Environment=&quot;PATH=/home/aleph/venvs/ingest-file/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin&quot;</span></span>
+<span class="line"><span style="color: #e1e4e8">EnvironmentFile=/home/aleph/aleph/aleph.env</span></span>
+<span class="line"><span style="color: #e1e4e8">WorkingDirectory=/home/aleph/aleph/services/ingest-file</span></span>
+<span class="line"><span style="color: #e1e4e8">ExecStart=/home/aleph/venvs/ingest-file/bin/ingestors process</span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8">[Install]</span></span>
+<span class="line"><span style="color: #e1e4e8">WantedBy=multi-user.target</span></span></code></pre>
+</div><p>Create a <code>systemd</code> service unit for the <code>aleph-worker</code> service <code>/etc/systemd/system/aleph-worker.service</code>:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">[Unit]</span></span>
+<span class="line"><span style="color: #e1e4e8">Description=aleph-worker daemon</span></span>
+<span class="line"><span style="color: #e1e4e8">Wants=redis-server.service postgresql.service elasticsearch.service ingest-file.service</span></span>
+<span class="line"><span style="color: #e1e4e8">After=network.target redis-server.service postgresql.service elasticsearch.service ingest-file.service</span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8">[Service]</span></span>
+<span class="line"><span style="color: #e1e4e8">Type=simple</span></span>
+<span class="line"><span style="color: #e1e4e8">User=aleph</span></span>
+<span class="line"><span style="color: #e1e4e8">Group=aleph</span></span>
+<span class="line"><span style="color: #e1e4e8">RuntimeDirectory=aleph-worker</span></span>
+<span class="line"><span style="color: #e1e4e8">Environment=&quot;PATH=/home/aleph/venvs/aleph/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin&quot;</span></span>
+<span class="line"><span style="color: #e1e4e8">EnvironmentFile=/home/aleph/aleph/aleph.env</span></span>
+<span class="line"><span style="color: #e1e4e8">WorkingDirectory=/home/aleph/aleph</span></span>
+<span class="line"><span style="color: #e1e4e8">ExecStart=/home/aleph/venvs/aleph/bin/aleph worker</span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8">[Install]</span></span>
+<span class="line"><span style="color: #e1e4e8">WantedBy=multi-user.target</span></span></code></pre>
+</div><p>Create a <code>systemd</code> service unit for <code>aleph-api</code> service <code>/etc/systemd/system/aleph-api.service</code>:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">[Unit]</span></span>
+<span class="line"><span style="color: #e1e4e8">Description=aleph-api daemon</span></span>
+<span class="line"><span style="color: #e1e4e8">Wants=redis-server.service postgresql.service elasticsearch.service convert-document.service ingest-file.service aleph-worker.service</span></span>
+<span class="line"><span style="color: #e1e4e8">After=network.target redis-server.service postgresql.service elasticsearch.service convert-document.service ingest-file.service aleph-worker.service</span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8">[Service]</span></span>
+<span class="line"><span style="color: #e1e4e8">Type=notify</span></span>
+<span class="line"><span style="color: #e1e4e8">User=aleph</span></span>
+<span class="line"><span style="color: #e1e4e8">Group=aleph</span></span>
+<span class="line"><span style="color: #e1e4e8">RuntimeDirectory=aleph-api</span></span>
+<span class="line"><span style="color: #e1e4e8">Environment=&quot;PATH=/home/aleph/venvs/aleph/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin&quot;</span></span>
+<span class="line"><span style="color: #e1e4e8">EnvironmentFile=/home/aleph/aleph/aleph.env</span></span>
+<span class="line"><span style="color: #e1e4e8">WorkingDirectory=/home/aleph/aleph</span></span>
+<span class="line"><span style="color: #e1e4e8">ExecStart=/home/aleph/venvs/aleph/bin/gunicorn -w 6 -b 0.0.0.0:8000 --log-level debug --log-file - aleph.wsgi:app</span></span>
+<span class="line"><span style="color: #e1e4e8">ExecReload=/bin/kill -s HUP $MAINPID</span></span>
+<span class="line"><span style="color: #e1e4e8">KillMode=mixed</span></span>
+<span class="line"><span style="color: #e1e4e8">TimeoutStopSec=5</span></span>
+<span class="line"><span style="color: #e1e4e8">PrivateTmp=true</span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8">[Install]</span></span>
+<span class="line"><span style="color: #e1e4e8">WantedBy=multi-user.target</span></span></code></pre>
+</div>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">sudo systemctl daemon-reload</span></span>
+<span class="line"><span style="color: #e1e4e8">sudo systemctl enable convert-document.service ingest-file.service aleph-worker.service aleph-api.service</span></span>
+<span class="line"><span style="color: #e1e4e8">sudo systemctl start convert-document.service ingest-file.service aleph-worker.service aleph-api.service</span></span></code></pre>
+</div><p>As the last step, we configure the webserver to proxy requests to Aleph. We use <a href="https://letsencrypt.org/">Let’s Encrypt</a> to obtain valid SSL certificates. You can find many online resources describing this process, e.g. <a href="https://certbot.eff.org/lets-encrypt/ubuntuother-nginx">here</a>.</p><p>Create a configuration file for the Nginx server in <code>/etc/nginx/sites-available/source.bird.tools</code>.</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">upstream aleph-api {</span></span>
+<span class="line"><span style="color: #e1e4e8">  server localhost:8000;</span></span>
+<span class="line"><span style="color: #e1e4e8">}</span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8">server {</span></span>
+<span class="line"><span style="color: #e1e4e8">  if ($host = source.bird.tools) {</span></span>
+<span class="line"><span style="color: #e1e4e8">    return 301 https://$host$request_uri;</span></span>
+<span class="line"><span style="color: #e1e4e8">  } # managed by Certbot</span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8">  listen 80 default_server;</span></span>
+<span class="line"><span style="color: #e1e4e8">  listen [::]:80 default_server;</span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8">  server_name source.bird.tools;</span></span>
+<span class="line"><span style="color: #e1e4e8">  return 404; # managed by Certbot</span></span>
+<span class="line"><span style="color: #e1e4e8">}</span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8">server {</span></span>
+<span class="line"><span style="color: #e1e4e8">  server_name source.bird.tools;</span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8">  ignore_invalid_headers off;</span></span>
+<span class="line"><span style="color: #e1e4e8">  add_header Referrer-Policy &quot;same-origin&quot;;</span></span>
+<span class="line"><span style="color: #e1e4e8">  add_header X-Clacks-Overhead &quot;GNU Terry Pratchett&quot;;</span></span>
+<span class="line"><span style="color: #e1e4e8">  add_header X-Content-Type-Options &quot;nosniff&quot;;</span></span>
+<span class="line"><span style="color: #e1e4e8">  add_header X-Frame-Options &quot;SAMEORIGIN&quot;;</span></span>
+<span class="line"><span style="color: #e1e4e8">  add_header X-XSS-Protection &quot;1; mode=block&quot;;</span></span>
+<span class="line"><span style="color: #e1e4e8">  add_header Feature-Policy &quot;accelerometer &#39;none&#39;; camera &#39;none&#39;; geolocation &#39;none&#39;; gyroscope &#39;none&#39;; magnetometer &#39;none&#39;; microphone &#39;none&#39;; payment &#39;none&#39;; usb &#39;none&#39;&quot;;</span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8">  client_max_body_size 1024M;</span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8">  listen [::]:443 ssl ipv6only=on; # managed by Certbot</span></span>
+<span class="line"><span style="color: #e1e4e8">  listen 443 ssl; # managed by Certbot</span></span>
+<span class="line"><span style="color: #e1e4e8">  ssl_certificate /etc/letsencrypt/live/source.bird.tools/fullchain.pem; # managed by Certbot</span></span>
+<span class="line"><span style="color: #e1e4e8">  ssl_certificate_key /etc/letsencrypt/live/source.bird.tools/privkey.pem; # managed by Certbot</span></span>
+<span class="line"><span style="color: #e1e4e8">  include /etc/letsencrypt/options-ssl-nginx.conf; # managed by Certbot</span></span>
+<span class="line"><span style="color: #e1e4e8">  ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem; # managed by Certbot</span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8">  location / {</span></span>
+<span class="line"><span style="color: #e1e4e8">    root /home/aleph/aleph/ui/build;</span></span>
+<span class="line"><span style="color: #e1e4e8">    try_files $uri $uri/ /index.html;</span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8">    gzip_static on;</span></span>
+<span class="line"><span style="color: #e1e4e8">    gzip_types text/plain text/xml text/css</span></span>
+<span class="line"><span style="color: #e1e4e8">    text/javascript application/x-javascript;</span></span>
+<span class="line"><span style="color: #e1e4e8">  }</span></span>
+<span class="line"><span style="color: #e1e4e8"></span></span>
+<span class="line"><span style="color: #e1e4e8">  location /api {</span></span>
+<span class="line"><span style="color: #e1e4e8">    proxy_pass         http://aleph-api;</span></span>
+<span class="line"><span style="color: #e1e4e8">    proxy_redirect     off;</span></span>
+<span class="line"><span style="color: #e1e4e8">    proxy_set_header   Host $http_host;</span></span>
+<span class="line"><span style="color: #e1e4e8">    proxy_set_header   X-Real-IP $remote_addr;</span></span>
+<span class="line"><span style="color: #e1e4e8">    proxy_set_header   X-Forwarded-For $proxy_add_x_forwarded_for;</span></span>
+<span class="line"><span style="color: #e1e4e8">  }</span></span>
+<span class="line"><span style="color: #e1e4e8">}</span></span></code></pre>
+</div><p>We enable the configuration and restart the server.</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">cd /etc/nginx/sites-enabled</span></span>
+<span class="line"><span style="color: #e1e4e8">ln -sf /etc/nginx/sites-availble/source.bird.tools</span></span>
+<span class="line"><span style="color: #e1e4e8">nginx -t</span></span>
+<span class="line"><span style="color: #e1e4e8">systemctl restart nginx</span></span></code></pre>
+</div><p>Aleph should be up and running. You want to create an initial user account. See the following section on how to do that,</p><h2 class="beta" id="aleph-configuration">Aleph Configuration</h2><p>Whenever you want to interact with Aleph you have to activate it for your running shell. I use the following commands when interacting with Aleph.</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">sudo -i -u aleph</span></span>
+<span class="line"><span style="color: #e1e4e8">source venvs/aleph/bin/activate</span></span>
+<span class="line"><span style="color: #e1e4e8">export ALEPHCLIENT_API_KEY=&lt;your api key&gt;</span></span></code></pre>
+</div><h3 class="gamma" id="create-aleph-users">Create Aleph users</h3>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">aleph createuser -n crito -p SuperSecretPassword -a crito@cryptodrunks.net</span></span></code></pre>
+</div><p>The command outputs an API key that you should save somewhere. You will need it in the future when interacting with Aleph.</p><h3 class="gamma" id="upgrade-aleph">Upgrade Aleph</h3><p>Upgrading Aleph requires to pull the latest changes and reinstall any dependencies required. To upgrade from Aleph 3.4.4 to e.g. 3.4.5 run the following commands:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">cd aleph</span></span>
+<span class="line"><span style="color: #e1e4e8">git fetch --all</span></span>
+<span class="line"><span style="color: #e1e4e8">git checkout 3.4.5</span></span>
+<span class="line"><span style="color: #e1e4e8">pip install -r requirements-generic.txt</span></span>
+<span class="line"><span style="color: #e1e4e8">pip install -r requirements-toolkit.txt</span></span>
+<span class="line"><span style="color: #e1e4e8">pip install .</span></span></code></pre>
+</div><p>Unfortunately, some dependencies are missing from the requirement files. Particularly <code>spacy</code> is installed separately. Check the <code>Dockerfile</code> in the <code>aleph</code> directory to see if any additional steps are required.</p><h3 class="gamma" id="import-data">Import data</h3>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #e1e4e8">alephclient crawldir -f test out.pdf</span></span></code></pre>
+</div>
+</div>
+  
+  
+  
+
+  
+  
+
+        
+</div>
+      </main>
+    
+</div>
+  </div>
+
+  <script>(function(){const layout = "docs";
+
+    // Persist the sidebar scroll position on subsequent page views using the
+    // same layout. The same layout usually renders the same sidebar contents,
+    // e.g. the DocsLayout always renders the DocsNav.
+    (function () {
+      const STORAGE_KEY = 'sidebar-scroll-top';
+      const sidebar = document.querySelector('#main-sidebar');
+
+      if (!layout || !sidebar) {
+        return;
+      }
+
+      // Store the current scroll position when user navigates away or switches tabs.
+      document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'hidden') {
+          const value = JSON.stringify({ [layout]: sidebar.scrollTop });
+          localStorage.setItem(STORAGE_KEY, value);
+        }
+      });
+
+      // Restore scroll position on page load.
+      let scrollTop = localStorage.getItem(STORAGE_KEY);
+      scrollTop = scrollTop && JSON.parse(scrollTop)[layout];
+      localStorage.removeItem(STORAGE_KEY);
+
+      if (scrollTop) {
+        sidebar.scrollTo(0, scrollTop);
+      }
+    })();
+  })();</script>
+
+  </body></html>

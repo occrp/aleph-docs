@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Creating and editing entities – Aleph</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/_astro/hoisted.2dfbd17d.css" />
+<link rel="stylesheet" href="/_astro/index.f70b7d34.css" />
+<link rel="stylesheet" href="/_astro/index.8ee8c38b.css" />
+<link rel="stylesheet" href="/_astro/index.a2ee5a0d.css" /><script type="module" src="/_astro/hoisted.bc71e440.js"></script></head>
+  <body>
+    
+
+<a class="SkipLink astro-DF2DBLBO" href="#content">
+  Skip to content
+</a>
+
+    
+
+<header class="Header astro-PTS2MPZI">
+  
+
+<div class="Wrapper Wrapper--padded Header__wrapper astro-PTS2MPZI astro-5QJF6FES">
+  
+    <a href="/" class="Header__title astro-PTS2MPZI" translate="no">
+      Aleph
+    </a>
+
+    <div class="Header__nav astro-PTS2MPZI">
+          
+
+<nav class="HeaderNav astro-BIH2FJRL">
+  <ul class="astro-BIH2FJRL">
+    <li class="HeaderNav__item HeaderNav__item--active astro-BIH2FJRL">
+          <a href="/users" class="astro-BIH2FJRL">Users</a>
+        </li><li class="HeaderNav__item astro-BIH2FJRL">
+          <a href="/developers" class="astro-BIH2FJRL">Developers</a>
+        </li>
+  </ul>
+</nav>
+        </div><div class="Header__translations astro-PTS2MPZI">
+          
+
+
+
+<div class="LanguageSelector astro-63743BKI" hidden>
+  
+
+<div class="Icon LanguageSelector__icon astro-63743BKI astro-4FCJ53EQ" aria-hidden="true">
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="astro-4FCJ53EQ">
+        <path d="M7.75 2.75a.75.75 0 00-1.5 0v1.258a32.987 32.987 0 00-3.599.278.75.75 0 10.198 1.487A31.545 31.545 0 018.7 5.545 19.381 19.381 0 017 9.56a19.418 19.418 0 01-1.002-2.05.75.75 0 00-1.384.577 20.935 20.935 0 001.492 2.91 19.613 19.613 0 01-3.828 4.154.75.75 0 10.945 1.164A21.116 21.116 0 007 12.331c.095.132.192.262.29.391a.75.75 0 001.194-.91c-.204-.266-.4-.538-.59-.815a20.888 20.888 0 002.333-5.332c.31.031.618.068.924.108a.75.75 0 00.198-1.487 32.832 32.832 0 00-3.599-.278V2.75z" class="astro-4FCJ53EQ"></path>
+        <path fill-rule="evenodd" d="M13 8a.75.75 0 01.671.415l4.25 8.5a.75.75 0 11-1.342.67L15.787 16h-5.573l-.793 1.585a.75.75 0 11-1.342-.67l4.25-8.5A.75.75 0 0113 8zm2.037 6.5L13 10.427 10.964 14.5h4.073z" clip-rule="evenodd" class="astro-4FCJ53EQ"></path>
+      </svg>
+</div>
+  <span class="LanguageSelector__label astro-63743BKI" aria-hidden="true">
+    English
+  </span>
+  
+
+<div class="Icon LanguageSelector__chevron astro-63743BKI astro-4FCJ53EQ" aria-hidden="true">
+  
+
+  
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="astro-4FCJ53EQ">
+        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" class="astro-4FCJ53EQ"></path>
+      </svg>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  <label for="language-selector" class="visually-hidden astro-63743BKI">
+    Select language:
+  </label>
+
+  <select id="language-selector" class="LanguageSelector__select astro-63743BKI">
+    <option selected value="" translate="no" class="astro-63743BKI">
+      English
+    </option>
+    <option value="es" lang="es" translate="no" class="astro-63743BKI">
+          Español
+        </option><option value="pt" lang="pt" translate="no" class="astro-63743BKI">
+          Português
+        </option><option value="fr" lang="fr" translate="no" class="astro-63743BKI">
+          Français
+        </option>
+  </select>
+</div>
+        </div><div class="Header__search astro-PTS2MPZI">
+          
+
+
+
+<div id="algolia-docsearch" data-algolia-app-id="T36QKHHSVS" data-algolia-api-key="b462393bca678070ceb9abf533aeeb0b" data-algolia-index-name="aleph-occrp">
+</div>
+        </div>
+</div>
+</header>
+
+    
+  <div class="DefaultLayout astro-63CSQH4F">
+    
+
+<div class="Wrapper Wrapper--padded DefaultLayout__wrapper astro-63CSQH4F astro-5QJF6FES">
+  <div class="DefaultLayout__sidebar DefaultLayout__left astro-63CSQH4F" id="main-sidebar">
+            
+
+
+
+<div class="ExpandableSidebar astro-AR35RRUP" id="expandable-sidebar">
+  <button class="ExpandableSidebar__toggle astro-AR35RRUP" id="expandable-sidebar-toggle" aria-expanded="false" aria-controls="expandable-sidebar-content">
+    
+
+<div class="Icon astro-4FCJ53EQ" aria-hidden="true">
+  
+
+  
+
+  
+
+  
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="astro-4FCJ53EQ">
+        <path fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10zm0 5.25a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" class="astro-4FCJ53EQ"></path>
+      </svg>
+
+  
+
+  
+
+  
+
+  
+</div>
+    <span class="ExpandableSidebar__show astro-AR35RRUP">Show navigation</span>
+    <span class="ExpandableSidebar__hide astro-AR35RRUP">Hide navigation</span>
+  </button>
+
+  <div class="ExpandableSidebar__content astro-AR35RRUP" id="expandable-sidebar-content">
+    
+    
+
+<nav class="astro-UAI3XTHD">
+  <ul class="astro-UAI3XTHD">
+    
+
+<li class="NavSection astro-EJN57FPH">
+  <span class="section-heading astro-EJN57FPH">Getting started</span>
+  <ul class="astro-EJN57FPH">
+    
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/users/getting-started/account" class="astro-7VDFTENJ">
+    Manage your account
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/users/getting-started/key-terms" class="astro-7VDFTENJ">
+    Key terms
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/users/getting-started/homepage" class="astro-7VDFTENJ">
+    Navigate the homepage
+    
+  </a>
+
+  
+</li>
+  </ul>
+</li>
+
+<li class="NavSection astro-EJN57FPH">
+  <span class="section-heading astro-EJN57FPH">Search</span>
+  <ul class="astro-EJN57FPH">
+    
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/users/search/basics" class="astro-7VDFTENJ">
+    Searches, filters, and alerts
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/users/search/advanced" class="astro-7VDFTENJ">
+    Advanced search
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/users/search/datasets" class="astro-7VDFTENJ">
+    Searching within specific datasets
+    
+  </a>
+
+  
+</li>
+  </ul>
+</li>
+
+<li class="NavSection astro-EJN57FPH">
+  <span class="section-heading astro-EJN57FPH">Investigations</span>
+  <ul class="astro-EJN57FPH">
+    
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/users/investigations/overview" class="astro-7VDFTENJ">
+    About investigation workspaces
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/users/investigations/create" class="astro-7VDFTENJ">
+    Creating an investigation workspace
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/users/investigations/manage-access" class="astro-7VDFTENJ">
+    Manage access
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/users/investigations/uploading-documents" class="astro-7VDFTENJ">
+    Uploading documents
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem NavItem--active astro-7VDFTENJ">
+  <a href="/users/investigations/entity-editor" class="astro-7VDFTENJ">
+    Creating and editing entities
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/users/investigations/cross-referencing" class="astro-7VDFTENJ">
+    Cross-referencing your data
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/users/investigations/network-diagrams" class="astro-7VDFTENJ">
+    Drawing network diagrams
+    
+  </a>
+
+  
+</li>
+  </ul>
+</li>
+
+<li class="NavSection astro-EJN57FPH">
+  <span class="section-heading astro-EJN57FPH">FAQ</span>
+  <ul class="astro-EJN57FPH">
+    
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/users/faq/account" class="astro-7VDFTENJ">
+    Account &amp; Recovery
+    
+  </a>
+
+  
+</li>
+  </ul>
+</li>
+
+<li class="NavSection astro-EJN57FPH">
+  <span class="section-heading astro-EJN57FPH">Advanced</span>
+  <ul class="astro-EJN57FPH">
+    
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/users/advanced/reconciliation" class="astro-7VDFTENJ">
+    OpenRefine Reconciliation
+    
+  </a>
+
+  
+</li>
+  </ul>
+</li>
+  </ul>
+</nav>
+  
+  </div>
+</div>
+          </div><div class="DefaultLayout__sidebar DefaultLayout__right astro-63CSQH4F">
+            
+
+<div class="Stack astro-4ZDCY3LK">
+  
+              
+
+<div class="TocNav">
+      
+        <h2 id="toc-nav-heading" class="section-heading">
+          On this page
+        </h2>
+
+        
+
+<nav aria-labelledby="toc-nav-heading" class="astro-UAI3XTHD">
+  <ul class="astro-UAI3XTHD">
+    
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#creating-entities" class="astro-7VDFTENJ">
+    Creating entities
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#editing-entities" class="astro-7VDFTENJ">
+    Editing entities
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#adding-additional-properties" class="astro-7VDFTENJ">
+    Adding additional properties
+    
+  </a>
+
+  
+</li>
+  </ul>
+</nav>
+      
+    </div>
+              
+
+<div class="Meta astro-EVT4MHHE">
+  <a href="https://github.com/alephdata/aleph/commits/main/docs/src/pages/users/investigations/entity-editor/index.mdx" noreferrer noopener class="astro-EVT4MHHE">Last updated on 2023-07-24.</a>
+  <br class="astro-EVT4MHHE">
+  <a href="https://github.com/alephdata/aleph/edit/main/docs/src/pages/users/investigations/entity-editor/index.mdx" noreferrer noopener class="astro-EVT4MHHE">Edit this page on GitHub.</a>
+</div>
+            
+</div>
+          </div><main class="DefaultLayout__content astro-63CSQH4F" id="content">
+        
+
+<div class="Wrapper Wrapper--prose astro-5QJF6FES">
+  
+          
+  
+  
+  
+
+<div class="RichContent astro-B2ZQFBP5">
+  <h1 class="alpha" id="creating-and-editing-individual-entities">Creating and editing individual entities</h1><p class="lead">Aleph provides an easy-to-use spreadsheet interface for creating, editing, linking, and deleting structured entities within an investigation workspace.</p><h2 class="beta" id="creating-entities">Creating entities</h2><p>While entities (names of people, companies, bank accounts, addresses, etc.) can be added to an investigation in bulk by creating network diagrams or via generation from an uploaded spreadsheet (see next section), it is also possible to create and edit entities individually.</p>
+
+<div class="Steps astro-TKOHH6ER">
+  <ol class="Steps__list astro-TKOHH6ER">
+    
+
+<li class="Step astro-YRYJH7IK">
+  
+
+<div class="RichContent astro-B2ZQFBP5">
+  
+    <p>To get started, go to <strong>Entities</strong> on the sidebar of any investigation page and select one of the options listed under <strong>Add a new entity type</strong>:</p>
+
+
+
+<figure class="Figure astro-TGCFY6BO">
+  
+  <div class="Image astro-S2MT6LW7" style="--image-width: 1898;--image-height: 1266;--image-density: 2;">
+    <a class="Image__link astro-S2MT6LW7" title="Expand image" href="/assets/pages/users/investigations/entity-editor/dropdown.png" target="_blank">
+      <img src="/assets/pages/users/investigations/entity-editor/dropdown.png" loading="lazy" class="astro-S2MT6LW7">
+    </a>
+  </div>
+  
+  
+</figure><p>Let’s say you want to add a list of 5 people you are interested in checking if they appear in Aleph datasets. You just need to click on <strong>Add new entity type</strong> and select <strong>Person</strong>.</p>
+  
+</div>
+</li>
+
+<li class="Step astro-YRYJH7IK">
+  
+
+<div class="RichContent astro-B2ZQFBP5">
+  
+    <p>You will now see the following screen:</p>
+
+
+
+<figure class="Figure astro-TGCFY6BO">
+  
+  <div class="Image astro-S2MT6LW7" style="--image-width: 1999;--image-height: 836;--image-density: 2;">
+    <a class="Image__link astro-S2MT6LW7" title="Expand image" href="/assets/pages/users/investigations/entity-editor/empty-table.png" target="_blank">
+      <img src="/assets/pages/users/investigations/entity-editor/empty-table.png" loading="lazy" class="astro-S2MT6LW7">
+    </a>
+  </div>
+  
+  
+</figure><p>You can then start typing the full name of the person and other relevant data you might have such as <strong>Nationality</strong> and <strong>Birth date</strong>. The format for birth dates in Aleph is <code>YYYY-MM-DD</code>. In short, most properties, like a person’s name or address, are free text values, but other properties, like birth date or nationality are restricted to date or country values, respectively. When you click to edit a cell, the table editor will display a slightly different editing input, depending upon the type of the property value you are editing.</p>
+  
+</div>
+</li>
+
+<li class="Step astro-YRYJH7IK">
+  
+
+<div class="RichContent astro-B2ZQFBP5">
+  
+    <p>Once you’ve entered data in a cell, press <strong>Enter</strong> to save the changes or click outside of the cell you have edited.</p>
+  
+</div>
+</li>
+
+<li class="Step astro-YRYJH7IK">
+  
+
+<div class="RichContent astro-B2ZQFBP5">
+  
+    <p>By clicking on the <strong>Add property</strong> button, you can select other data categories you want to add regarding people you are adding to the table. For example, you can add the person’s country of origin and addresses, among other available options:</p>
+
+
+
+<figure class="Figure astro-TGCFY6BO">
+  
+  <div class="Image astro-S2MT6LW7" style="--image-width: 1999;--image-height: 857;--image-density: 2;">
+    <a class="Image__link astro-S2MT6LW7" title="Expand image" href="/assets/pages/users/investigations/entity-editor/add-property.png" target="_blank">
+      <img src="/assets/pages/users/investigations/entity-editor/add-property.png" loading="lazy" class="astro-S2MT6LW7">
+    </a>
+  </div>
+  
+  
+</figure>
+  
+</div>
+</li>
+
+<li class="Step astro-YRYJH7IK">
+  
+
+<div class="RichContent astro-B2ZQFBP5">
+  
+    <p>To create another new entity using the table editor, either click the <strong>Add new</strong> button at the top of the table:</p>
+
+
+
+<figure class="Figure astro-TGCFY6BO">
+  
+  <div class="Image astro-S2MT6LW7" style="--image-width: 1999;--image-height: 226;--image-density: 2;">
+    <a class="Image__link astro-S2MT6LW7" title="Expand image" href="/assets/pages/users/investigations/entity-editor/add-row.png" target="_blank">
+      <img src="/assets/pages/users/investigations/entity-editor/add-row.png" loading="lazy" class="astro-S2MT6LW7">
+    </a>
+  </div>
+  
+  
+</figure><p>Or simply start typing in one of the cells of the bottom row of the table:</p>
+
+
+
+<figure class="Figure astro-TGCFY6BO">
+  
+  <div class="Image astro-S2MT6LW7" style="--image-width: 1999;--image-height: 260;--image-density: 2;">
+    <a class="Image__link astro-S2MT6LW7" title="Expand image" href="/assets/pages/users/investigations/entity-editor/add-row-alternative.png" target="_blank">
+      <img src="/assets/pages/users/investigations/entity-editor/add-row-alternative.png" loading="lazy" class="astro-S2MT6LW7">
+    </a>
+  </div>
+  
+  
+</figure>
+  
+</div>
+</li>
+  </ol>
+</div><h2 class="beta" id="editing-entities">Editing entities</h2><p>Editing properties of an entity in the table editor works in much the same way as any spreadsheet editor like Microsoft Excel or Google Sheets.</p>
+
+<div class="Steps astro-TKOHH6ER">
+  <ol class="Steps__list astro-TKOHH6ER">
+    
+
+<li class="Step astro-YRYJH7IK">
+  
+
+<div class="RichContent astro-B2ZQFBP5">
+  
+    <p>Click in a cell or simply start typing in an active cell to edit its contents</p>
+  
+</div>
+</li>
+
+<li class="Step astro-YRYJH7IK">
+  
+
+<div class="RichContent astro-B2ZQFBP5">
+  
+    <p>Click outside of a cell or press <strong>Enter</strong> to finish editing a cell.</p>
+  
+</div>
+</li>
+
+<li class="Step astro-YRYJH7IK">
+  
+
+<div class="RichContent astro-B2ZQFBP5">
+  
+    <p>Copy and paste the value of a cell or multiple cells to duplicate values in other cells of the table.</p>
+  
+</div>
+</li>
+  </ol>
+</div><h2 class="beta" id="adding-additional-properties">Adding additional properties</h2><p>As mentioned above, each column in the table corresponds to a <a href="/users/getting-started/key-terms#properties">property</a>: an element connected to the person, company, contract, etc. in your table. For example: an ID, an address or an e-mail.</p><p>By default, the table editor displays the most commonly-used properties of an entity type (e.g. name, nationality, and birth date for a person) as well as any properties that contain values. But each entity type has many more additional properties that can be added to the table. To add an additional property:</p>
+
+<div class="Steps astro-TKOHH6ER">
+  <ol class="Steps__list astro-TKOHH6ER">
+    
+
+<li class="Step astro-YRYJH7IK">
+  
+
+<div class="RichContent astro-B2ZQFBP5">
+  
+    <p>Scroll to the far right of the table.</p>
+  
+</div>
+</li>
+
+<li class="Step astro-YRYJH7IK">
+  
+
+<div class="RichContent astro-B2ZQFBP5">
+  
+    <p>Click the <strong>Add a property</strong> button.</p>
+  
+</div>
+</li>
+
+<li class="Step astro-YRYJH7IK">
+  
+
+<div class="RichContent astro-B2ZQFBP5">
+  
+    <p>Then select a property from the list.</p>
+
+
+
+<figure class="Figure astro-TGCFY6BO">
+  
+  <div class="Image astro-S2MT6LW7" style="--image-width: 1999;--image-height: 997;--image-density: 2;">
+    <a class="Image__link astro-S2MT6LW7" title="Expand image" href="/assets/pages/users/investigations/entity-editor/add-property-2.png" target="_blank">
+      <img src="/assets/pages/users/investigations/entity-editor/add-property-2.png" loading="lazy" class="astro-S2MT6LW7">
+    </a>
+  </div>
+  
+  
+</figure>
+  
+</div>
+</li>
+  </ol>
+</div>
+</div>
+  
+  
+  
+
+  
+  
+
+        
+</div>
+      </main>
+    
+</div>
+  </div>
+
+  <script>(function(){const layout = "docs";
+
+    // Persist the sidebar scroll position on subsequent page views using the
+    // same layout. The same layout usually renders the same sidebar contents,
+    // e.g. the DocsLayout always renders the DocsNav.
+    (function () {
+      const STORAGE_KEY = 'sidebar-scroll-top';
+      const sidebar = document.querySelector('#main-sidebar');
+
+      if (!layout || !sidebar) {
+        return;
+      }
+
+      // Store the current scroll position when user navigates away or switches tabs.
+      document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'hidden') {
+          const value = JSON.stringify({ [layout]: sidebar.scrollTop });
+          localStorage.setItem(STORAGE_KEY, value);
+        }
+      });
+
+      // Restore scroll position on page load.
+      let scrollTop = localStorage.getItem(STORAGE_KEY);
+      scrollTop = scrollTop && JSON.parse(scrollTop)[layout];
+      localStorage.removeItem(STORAGE_KEY);
+
+      if (scrollTop) {
+        sidebar.scrollTo(0, scrollTop);
+      }
+    })();
+  })();</script>
+
+  </body></html>

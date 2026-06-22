@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Mixed document/entity graphs – Aleph</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/_astro/hoisted.2dfbd17d.css" />
+<link rel="stylesheet" href="/_astro/index.f70b7d34.css" />
+<link rel="stylesheet" href="/_astro/index.8ee8c38b.css" />
+<link rel="stylesheet" href="/_astro/index.a2ee5a0d.css" /><script type="module" src="/_astro/hoisted.bc71e440.js"></script></head>
+  <body>
+    
+
+<a class="SkipLink astro-DF2DBLBO" href="#content">
+  Skip to content
+</a>
+
+    
+
+<header class="Header astro-PTS2MPZI">
+  
+
+<div class="Wrapper Wrapper--padded Header__wrapper astro-PTS2MPZI astro-5QJF6FES">
+  
+    <a href="/" class="Header__title astro-PTS2MPZI" translate="no">
+      Aleph
+    </a>
+
+    <div class="Header__nav astro-PTS2MPZI">
+          
+
+<nav class="HeaderNav astro-BIH2FJRL">
+  <ul class="astro-BIH2FJRL">
+    <li class="HeaderNav__item astro-BIH2FJRL">
+          <a href="/users" class="astro-BIH2FJRL">Users</a>
+        </li><li class="HeaderNav__item HeaderNav__item--active astro-BIH2FJRL">
+          <a href="/developers" class="astro-BIH2FJRL">Developers</a>
+        </li>
+  </ul>
+</nav>
+        </div><div class="Header__translations astro-PTS2MPZI">
+          
+
+
+
+<div class="LanguageSelector astro-63743BKI" hidden>
+  
+
+<div class="Icon LanguageSelector__icon astro-63743BKI astro-4FCJ53EQ" aria-hidden="true">
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="astro-4FCJ53EQ">
+        <path d="M7.75 2.75a.75.75 0 00-1.5 0v1.258a32.987 32.987 0 00-3.599.278.75.75 0 10.198 1.487A31.545 31.545 0 018.7 5.545 19.381 19.381 0 017 9.56a19.418 19.418 0 01-1.002-2.05.75.75 0 00-1.384.577 20.935 20.935 0 001.492 2.91 19.613 19.613 0 01-3.828 4.154.75.75 0 10.945 1.164A21.116 21.116 0 007 12.331c.095.132.192.262.29.391a.75.75 0 001.194-.91c-.204-.266-.4-.538-.59-.815a20.888 20.888 0 002.333-5.332c.31.031.618.068.924.108a.75.75 0 00.198-1.487 32.832 32.832 0 00-3.599-.278V2.75z" class="astro-4FCJ53EQ"></path>
+        <path fill-rule="evenodd" d="M13 8a.75.75 0 01.671.415l4.25 8.5a.75.75 0 11-1.342.67L15.787 16h-5.573l-.793 1.585a.75.75 0 11-1.342-.67l4.25-8.5A.75.75 0 0113 8zm2.037 6.5L13 10.427 10.964 14.5h4.073z" clip-rule="evenodd" class="astro-4FCJ53EQ"></path>
+      </svg>
+</div>
+  <span class="LanguageSelector__label astro-63743BKI" aria-hidden="true">
+    English
+  </span>
+  
+
+<div class="Icon LanguageSelector__chevron astro-63743BKI astro-4FCJ53EQ" aria-hidden="true">
+  
+
+  
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="astro-4FCJ53EQ">
+        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" class="astro-4FCJ53EQ"></path>
+      </svg>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</div>
+
+  <label for="language-selector" class="visually-hidden astro-63743BKI">
+    Select language:
+  </label>
+
+  <select id="language-selector" class="LanguageSelector__select astro-63743BKI">
+    <option selected value="" translate="no" class="astro-63743BKI">
+      English
+    </option>
+    <option value="es" lang="es" translate="no" class="astro-63743BKI">
+          Español
+        </option><option value="pt" lang="pt" translate="no" class="astro-63743BKI">
+          Português
+        </option><option value="fr" lang="fr" translate="no" class="astro-63743BKI">
+          Français
+        </option>
+  </select>
+</div>
+        </div><div class="Header__search astro-PTS2MPZI">
+          
+
+
+
+<div id="algolia-docsearch" data-algolia-app-id="T36QKHHSVS" data-algolia-api-key="b462393bca678070ceb9abf533aeeb0b" data-algolia-index-name="aleph-occrp">
+</div>
+        </div>
+</div>
+</header>
+
+    
+  <div class="DefaultLayout astro-63CSQH4F">
+    
+
+<div class="Wrapper Wrapper--padded DefaultLayout__wrapper astro-63CSQH4F astro-5QJF6FES">
+  <div class="DefaultLayout__sidebar DefaultLayout__left astro-63CSQH4F" id="main-sidebar">
+            
+
+
+
+<div class="ExpandableSidebar astro-AR35RRUP" id="expandable-sidebar">
+  <button class="ExpandableSidebar__toggle astro-AR35RRUP" id="expandable-sidebar-toggle" aria-expanded="false" aria-controls="expandable-sidebar-content">
+    
+
+<div class="Icon astro-4FCJ53EQ" aria-hidden="true">
+  
+
+  
+
+  
+
+  
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="astro-4FCJ53EQ">
+        <path fill-rule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10zm0 5.25a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" class="astro-4FCJ53EQ"></path>
+      </svg>
+
+  
+
+  
+
+  
+
+  
+</div>
+    <span class="ExpandableSidebar__show astro-AR35RRUP">Show navigation</span>
+    <span class="ExpandableSidebar__hide astro-AR35RRUP">Hide navigation</span>
+  </button>
+
+  <div class="ExpandableSidebar__content astro-AR35RRUP" id="expandable-sidebar-content">
+    
+    
+
+<nav class="astro-UAI3XTHD">
+  <ul class="astro-UAI3XTHD">
+    
+
+<li class="NavSection astro-EJN57FPH">
+  <span class="section-heading astro-EJN57FPH">Tech Docs</span>
+  <ul class="astro-EJN57FPH">
+    
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/developers/installation" class="astro-7VDFTENJ">
+    Installing Aleph
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/developers/followthemoney" class="astro-7VDFTENJ">
+    FollowTheMoney
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/developers/memorious" class="astro-7VDFTENJ">
+    Crawling data with Memorious
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/developers/alephclient" class="astro-7VDFTENJ">
+    alephclient CLI
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/developers/mappings" class="astro-7VDFTENJ">
+    Importing structured data
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem NavItem--active astro-7VDFTENJ">
+  <a href="/developers/mixed-graphs" class="astro-7VDFTENJ">
+    Mixed document/entity graphs
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/developers/adding-text-processors" class="astro-7VDFTENJ">
+    Adding text processors
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/developers/technical-faq" class="astro-7VDFTENJ">
+    Technical FAQ
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/developers/developer-tools" class="astro-7VDFTENJ">
+    Developer tools
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="/developers/datacommons" class="astro-7VDFTENJ">
+    Data commons
+    
+  </a>
+
+  
+</li>
+  </ul>
+</li>
+
+<li class="NavSection astro-EJN57FPH">
+  <span class="section-heading astro-EJN57FPH">Reference</span>
+  <ul class="astro-EJN57FPH">
+    
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="https://redocly.github.io/redoc/?url=https://aleph.occrp.org/api/openapi.json" class="astro-7VDFTENJ">
+    Aleph API
+    
+
+<div class="Icon NavItem__icon astro-7VDFTENJ astro-4FCJ53EQ" aria-hidden="true">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" class="astro-4FCJ53EQ">
+        <path fill-rule="evenodd" d="M4.25 5.5a.75.75 0 00-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 00.75-.75v-4a.75.75 0 011.5 0v4A2.25 2.25 0 0112.75 17h-8.5A2.25 2.25 0 012 14.75v-8.5A2.25 2.25 0 014.25 4h5a.75.75 0 010 1.5h-5z" clip-rule="evenodd" class="astro-4FCJ53EQ"></path>
+        <path fill-rule="evenodd" d="M6.194 12.753a.75.75 0 001.06.053L16.5 4.44v2.81a.75.75 0 001.5 0v-4.5a.75.75 0 00-.75-.75h-4.5a.75.75 0 000 1.5h2.553l-9.056 8.194a.75.75 0 00-.053 1.06z" clip-rule="evenodd" class="astro-4FCJ53EQ"></path>
+      </svg>
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</div>
+  </a>
+
+  
+</li>
+  </ul>
+</li>
+  </ul>
+</nav>
+  
+  </div>
+</div>
+          </div><div class="DefaultLayout__sidebar DefaultLayout__right astro-63CSQH4F">
+            
+
+<div class="Stack astro-4ZDCY3LK">
+  
+              
+
+<div class="TocNav">
+      
+        <h2 id="toc-nav-heading" class="section-heading">
+          On this page
+        </h2>
+
+        
+
+<nav aria-labelledby="toc-nav-heading" class="astro-UAI3XTHD">
+  <ul class="astro-UAI3XTHD">
+    
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#why-is-this-complicated" class="astro-7VDFTENJ">
+    Why is this complicated?
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#example-persona-de-interes" class="astro-7VDFTENJ">
+    Example: Persona de Interes
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#step-1-screen-scraping-the-source-data" class="astro-7VDFTENJ">
+    Step 1: Screen-scraping the source data
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#step-2-uploading-documents-to-aleph-from-a-python-script" class="astro-7VDFTENJ">
+    Step 2: Uploading documents to Aleph from a Python script
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#step-3-making-followthemoney-entities-in-python" class="astro-7VDFTENJ">
+    Step 3: Making FollowTheMoney entities in Python
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#step-4-upload-entities-to-aleph" class="astro-7VDFTENJ">
+    Step 4: Upload entities to Aleph
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#step-5-convert-all-the-data" class="astro-7VDFTENJ">
+    Step 5: Convert all the data
+    
+  </a>
+
+  
+</li>
+
+<li class="NavItem astro-7VDFTENJ">
+  <a href="#conclusion" class="astro-7VDFTENJ">
+    Conclusion
+    
+  </a>
+
+  
+</li>
+  </ul>
+</nav>
+      
+    </div>
+              
+
+<div class="Meta astro-EVT4MHHE">
+  <a href="https://github.com/alephdata/aleph/commits/main/docs/src/pages/developers/mixed-graphs.mdx" noreferrer noopener class="astro-EVT4MHHE">Last updated on 2023-07-24.</a>
+  <br class="astro-EVT4MHHE">
+  <a href="https://github.com/alephdata/aleph/edit/main/docs/src/pages/developers/mixed-graphs.mdx" noreferrer noopener class="astro-EVT4MHHE">Edit this page on GitHub.</a>
+</div>
+            
+</div>
+          </div><main class="DefaultLayout__content astro-63CSQH4F" id="content">
+        
+
+<div class="Wrapper Wrapper--prose astro-5QJF6FES">
+  
+          
+  
+  
+  
+
+<div class="RichContent astro-B2ZQFBP5">
+  <h1 class="alpha" id="mixed-documententity-graphs">Mixed document/entity graphs</h1><p>Probably the most powerful feature of Aleph is the ability to import both structured content and document data from files. While these can be loaded to a collection separately, it sometimes makes sense to create links between entities from structured and unstructured data. The example below demonstrates how to make a mixed graph from documents, people, companies and court cases.</p><h2 class="beta" id="why-is-this-complicated">Why is this complicated?</h2><p>There are two distinct pathways for loading data into Aleph: either via document ingest for data in PDF, E-Mail or other document formats, or via <a href="/developers/mappings">data mappings</a> for semantic data, such as companies and people.</p><p>While both processes produce entities in <a href="/developers/followthemoney/">FollowTheMoney</a> format, there is one crucial difference: for ingested documents, the entity ID is set by Aleph, while for structured entities, you define an ID yourself. At the same time, the entity ID is needed to link to it from other entities.</p><p>Therefore, in order to make structured data entities link to ingested documents, you must first upload the documents to Aleph so that it assigns them an ID. Then you can use that entity ID in other parts of the FollowTheMoney entity graph.</p><h2 class="beta" id="example-persona-de-interes">Example: Persona de Interes</h2>
+
+
+
+<figure class="Figure astro-TGCFY6BO">
+  
+  <div class="Image astro-S2MT6LW7" style="--image-width: 1441;--image-height: 937;--image-density: 1;">
+    <a class="Image__link astro-S2MT6LW7" title="Expand image" href="/assets/Screenshot 2020-04-10 at 11.43.09.png" target="_blank">
+      <img src="/assets/Screenshot 2020-04-10 at 11.43.09.png" alt="Screenshot of the “The Persona de Interes” home page." loading="lazy" class="astro-S2MT6LW7">
+    </a>
+  </div>
+  
+  
+</figure><p><strong>Persona de Interes</strong> is a 2014 project by the OCCRP that features data from Mexico and Central America. It collects information on persons and companies, as well as real estate, court cases and source documents. For this tutorial, we will import the contents of the Persona de Interes web site into Aleph, preserving the connections between people and companies on the one hand, and to documents on the other.</p>
+
+<div class="Callout astro-HEOOEAXT">
+  <p>This example is accompanied by <a href="https://github.com/alephdata/example-personadeinteres">a GitHub repository</a> that contains the full source code, as well as the structured data from <strong>Persona de Interes</strong>.</p>
+</div><h2 class="beta" id="step-1-screen-scraping-the-source-data">Step 1: Screen-scraping the source data</h2><p>In order to get access to the raw data, we decided to simply scrape the PdI web site. The <a href="https://github.com/alephdata/example-personadeinteres/blob/master/parse.py">script used for this</a> is not central to this tutorial, but it leaves us with a <a href="https://github.com/alephdata/example-personadeinteres/blob/master/pdi.json">small JSON file</a> containing the published data, and a folder full of the PDF documents attached to profiles on the original site.</p>
+
+
+
+<figure class="Figure astro-TGCFY6BO">
+  
+  <div class="Image astro-S2MT6LW7" style="--image-width: 1279;--image-height: 1194;--image-density: 1;">
+    <a class="Image__link astro-S2MT6LW7" title="Expand image" href="/assets/Screenshot 2020-04-10 at 11.49.47.png" target="_blank">
+      <img src="/assets/Screenshot 2020-04-10 at 11.49.47.png" alt="A profile on the original site, showing a person profile, links to documents in a sidebar, and, at the bottom, links to related entities." loading="lazy" class="astro-S2MT6LW7">
+    </a>
+  </div>
+  
+  
+</figure><h2 class="beta" id="step-2-uploading-documents-to-aleph-from-a-python-script">Step 2: Uploading documents to Aleph from a Python script</h2><p>In the next step, we’ll start upload the scraped documents to Aleph. In return, Aleph will give us a document ID, which we can use to make links between the documents and other entities. For the upload, we will use <a href="/developers/alephclient">alephclient</a> as a Python library.</p><p>The code for uploading a document looks like this:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #6A737D"># Import alephclient:</span></span>
+<span class="line"><span style="color: #F97583">from</span><span style="color: #E1E4E8"> alephclient.api </span><span style="color: #F97583">import</span><span style="color: #E1E4E8"> AlephAPI</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #6A737D"># By default, alephclient will read host and API key from the</span></span>
+<span class="line"><span style="color: #6A737D"># environment. You can also pass both as an argument here:</span></span>
+<span class="line"><span style="color: #E1E4E8">api </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> AlephAPI()</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #6A737D"># Get the collection (dataset)</span></span>
+<span class="line"><span style="color: #E1E4E8">foreign_id </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">&#39;zz_occrp_pdi&#39;</span></span>
+<span class="line"><span style="color: #E1E4E8">collection </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> api.load_collection_by_foreign_id(foreign_id)</span></span>
+<span class="line"><span style="color: #E1E4E8">collection_id </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> collection.get(</span><span style="color: #9ECBFF">&#39;id&#39;</span><span style="color: #E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #E1E4E8">file_path </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> </span><span style="color: #9ECBFF">&#39;www.personadeinteres.org/uploads/example.pdf&#39;</span></span>
+<span class="line"><span style="color: #E1E4E8">metadata </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> {</span><span style="color: #9ECBFF">&#39;file_name&#39;</span><span style="color: #E1E4E8">: </span><span style="color: #9ECBFF">&#39;example.pdf&#39;</span><span style="color: #E1E4E8">}</span></span>
+<span class="line"><span style="color: #6A737D"># Upload the document:</span></span>
+<span class="line"><span style="color: #E1E4E8">result </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> api.ingest_upload(collection_id, file_path, metadata)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #6A737D"># Finally, we have an entity ID:</span></span>
+<span class="line"><span style="color: #E1E4E8">document_id </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> result.get(</span><span style="color: #9ECBFF">&#39;id&#39;</span><span style="color: #E1E4E8">)</span></span></code></pre>
+</div><p>If you visit your Aleph instance, you will see the documents being imported. Eventually, they will show up as searchable entities.</p><h2 class="beta" id="step-3-making-followthemoney-entities-in-python">Step 3: Making FollowTheMoney entities in Python</h2><p>Once we have received an ID for the document, we can start generating FollowTheMoney entities that link to it. In this scenario, we will not - as usual - be using a <a href="/developers/mappings">data mapping</a> to create entities. Instead we’ll use the <a href="/developers/followthemoney/ftm">followthemoney</a> Python library.</p><p>Using the library, we can use the <code>followthemoney</code> model definition to generate a so-called entity proxy, an object that can be used to construct an entity.</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #6A737D"># Load the followthemoney data model:</span></span>
+<span class="line"><span style="color: #F97583">from</span><span style="color: #E1E4E8"> followthemodel </span><span style="color: #F97583">import</span><span style="color: #E1E4E8"> model</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #6A737D"># Create an entity proxy by giving a schema:</span></span>
+<span class="line"><span style="color: #E1E4E8">proxy </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> model.make_entity(</span><span style="color: #9ECBFF">&#39;Person&#39;</span><span style="color: #E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #6A737D"># Generate an entity ID by hashing the given keys:</span></span>
+<span class="line"><span style="color: #E1E4E8">proxy.make_id(</span><span style="color: #9ECBFF">&#39;john-doe&#39;</span><span style="color: #E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #6A737D"># Assign a value to a property:</span></span>
+<span class="line"><span style="color: #E1E4E8">proxy.add(</span><span style="color: #9ECBFF">&#39;name&#39;</span><span style="color: #E1E4E8">, </span><span style="color: #9ECBFF">&#39;John Doe&#39;</span><span style="color: #E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #6A737D"># Convert the entity proxy to a JSON-like object:</span></span>
+<span class="line"><span style="color: #E1E4E8">data </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> proxy.to_dict()</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #6A737D"># And the inverse (JSON to proxy):</span></span>
+<span class="line"><span style="color: #E1E4E8">proxy </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> model.get_proxy(data)</span></span></code></pre>
+</div><p>Now that we’ve made our first person entity, we want to create a link between this person and the document we uploaded before. One way of doing this is to create an <code>UnknownLink</code> between the two, a generic link defined by FollowTheMoney:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #6A737D"># Create the link entity proxy:</span></span>
+<span class="line"><span style="color: #E1E4E8">link_proxy </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> model.make_entity(</span><span style="color: #9ECBFF">&#39;UnknownLink&#39;</span><span style="color: #E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #6A737D"># We&#39;ll derive the link ID from the other two IDs here, but</span></span>
+<span class="line"><span style="color: #6A737D"># this could be any unique value (make sure it does not clash</span></span>
+<span class="line"><span style="color: #6A737D"># with the ID for the main entity!)</span></span>
+<span class="line"><span style="color: #E1E4E8">link_proxy.make_id(</span><span style="color: #9ECBFF">&#39;link&#39;</span><span style="color: #E1E4E8">, proxy.id, document_id)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #6A737D"># Now we assign the two ends of the link. Note that we can just</span></span>
+<span class="line"><span style="color: #6A737D"># pass in a proxy object:</span></span>
+<span class="line"><span style="color: #E1E4E8">link_proxy.add(</span><span style="color: #9ECBFF">&#39;subject&#39;</span><span style="color: #E1E4E8">, proxy)</span></span>
+<span class="line"><span style="color: #E1E4E8">link_proxy.add(</span><span style="color: #9ECBFF">&#39;object&#39;</span><span style="color: #E1E4E8">, document_id)</span></span>
+<span class="line"><span style="color: #E1E4E8">link_proxy.add(</span><span style="color: #9ECBFF">&#39;role&#39;</span><span style="color: #E1E4E8">, </span><span style="color: #9ECBFF">&#39;Document about John&#39;</span><span style="color: #E1E4E8">)</span></span></code></pre>
+</div><h2 class="beta" id="step-4-upload-entities-to-aleph">Step 4: Upload entities to Aleph</h2><p>Now that we’ve created a person and a link to the document, we can upload both to Aleph using the <code>alephclient</code> API object we created before. For this, note that <code>alephclient</code> and <code>followthemoney</code> are separate tools, so we need to serialise our proxies into plain JSON-style dicts:</p>
+
+<div class="Code astro-5A6FZLWM" style="--code-color-background: #24292e;">
+  
+  <pre class="astro-code github-dark" style="background-color: #24292e; overflow-x: auto;"" tabindex="0"><code><span class="line"><span style="color: #6A737D"># Turn the two proxies into JSON form:</span></span>
+<span class="line"><span style="color: #E1E4E8">entities </span><span style="color: #F97583">=</span><span style="color: #E1E4E8"> [proxy.to_dict(), link_proxy.to_dict()]</span></span>
+<span class="line"></span>
+<span class="line"><span style="color: #6A737D"># You can also feed an iterator to write_entities if you</span></span>
+<span class="line"><span style="color: #6A737D"># want to upload a very large</span></span>
+<span class="line"><span style="color: #E1E4E8">api.write_entities(collection_id, entities)</span></span></code></pre>
+</div><p>When visiting the Aleph UI, you should now be able to see the the person record, the document, and the link between the two shown for each entity.</p><h2 class="beta" id="step-5-convert-all-the-data">Step 5: Convert all the data</h2><p>Obviously, this basic example needs to expand in order to convert the full data schema from <strong>Persona de Interes into FollowTheMoney</strong> entities.</p>
+
+
+
+<figure class="Figure astro-TGCFY6BO">
+  
+  <div class="Image astro-S2MT6LW7" style="--image-width: 625;--image-height: 426;--image-density: 1;">
+    <a class="Image__link astro-S2MT6LW7" title="Expand image" href="/assets/13d3b67dea7b2e1ce4e009bf70c2c819.jpg" target="_blank">
+      <img src="/assets/13d3b67dea7b2e1ce4e009bf70c2c819.jpg" loading="lazy" class="astro-S2MT6LW7">
+    </a>
+  </div>
+  
+  
+</figure><p>Please <a href="https://github.com/alephdata/example-personadeinteres/blob/master/load.py">check out the loading script</a> to see how it approaches entity creation, and mapping properties from the web scrape into FtM schema.</p><h2 class="beta" id="conclusion">Conclusion</h2><p>The goal of this tutorial was to show how you can create complex object graphs in Aleph in a way that combines structured and unstructured data. In the course of doing so, we’ve also shown that <code>alephclient</code> and <code>followthemoney</code> provide powerful Python libraries. Their full scope exceeds the scope of this Tutorial, but they can be used as power tools to make exciting data structures present in Aleph.</p><p>I hope you’ll enjoy experimenting with them to show your data in the most expressive way!</p>
+
+<div class="Callout astro-HEOOEAXT">
+  <p>You can explore the <a href="https://aleph.occrp.org/datasets/506">Persona de Interes data live on OCCRP’s
+Aleph</a>.</p>
+</div>
+</div>
+  
+  
+  
+
+  
+  
+
+        
+</div>
+      </main>
+    
+</div>
+  </div>
+
+  <script>(function(){const layout = "docs";
+
+    // Persist the sidebar scroll position on subsequent page views using the
+    // same layout. The same layout usually renders the same sidebar contents,
+    // e.g. the DocsLayout always renders the DocsNav.
+    (function () {
+      const STORAGE_KEY = 'sidebar-scroll-top';
+      const sidebar = document.querySelector('#main-sidebar');
+
+      if (!layout || !sidebar) {
+        return;
+      }
+
+      // Store the current scroll position when user navigates away or switches tabs.
+      document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'hidden') {
+          const value = JSON.stringify({ [layout]: sidebar.scrollTop });
+          localStorage.setItem(STORAGE_KEY, value);
+        }
+      });
+
+      // Restore scroll position on page load.
+      let scrollTop = localStorage.getItem(STORAGE_KEY);
+      scrollTop = scrollTop && JSON.parse(scrollTop)[layout];
+      localStorage.removeItem(STORAGE_KEY);
+
+      if (scrollTop) {
+        sidebar.scrollTo(0, scrollTop);
+      }
+    })();
+  })();</script>
+
+  </body></html>
